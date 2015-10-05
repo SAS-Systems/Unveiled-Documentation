@@ -7,7 +7,7 @@ Whistleblowers try to impart those crimes to the community although politics and
 This project shall help these journalists and dedicated individuals to publish and save their captured video and photo material 
 wherefore they have perhaps put their life at risk. Our Application addresses exactly this point.
 
-> Citizens with a conscience are not going to ignore wrong-doing simply because they’ll be destroyed for it: the conscience forbids it.
+> Citizens with a conscience are not going to ignore wrong-doing simply because theyâ€™ll be destroyed for it: the conscience forbids it.
 > [Edward Snowden](http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html)
 
 People using our App can take pictures and videos which are immediately uploaded to our servers. There they are stored in a private 
@@ -21,3 +21,7 @@ and Schaefer (Digister).
 This blog deals with software engineering principles and methods which are needed for a successful project.
 Every progress and change will be tracked in this blog to create a comprehensible project schedule. Follow 
 [this link](http://unveiled.systemgrid.de/wp/blog/) to take a look at our blog!
+
+##Technologies
+In the following picture, you can see a small layout showing the technologies we use to build our program.
+![Technologies](https://github.com/CodeLionX/Unveiled/blob/master/Dokumente/Bilder/technologies.png)
