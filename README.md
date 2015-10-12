@@ -1,6 +1,10 @@
 # Unveiled - Fight against Injustice straightaway
 
 
+## TravisCI status
+[![Build Status](https://travis-ci.org/CodeLionX/Unveiled.svg)](https://travis-ci.org/CodeLionX/Unveiled)
+
+
 ## Our Vision
 Everyday a huge number of undetected crimes are committed on this planet. 
 Whistleblowers try to impart those crimes to the community although politics and public authorities put rocks in their way. 
