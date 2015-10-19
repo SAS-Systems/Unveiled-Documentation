@@ -19,13 +19,24 @@ library only accessible to the owner. Through a web based interface you are able
 
 
 ## [Our Blog](http://unveiled.systemgrid.de/wp/blog/)
-Our blog is written by the developers of Unveiled. Our team consits of three guys named Schmidl (CodeLionX), Adams (SeanAda) 
-and Schaefer (Digister).
+Our blog is written by the developers of Unveiled (SAS Systems). Our team consits of three guys named Schmidl (CodeLionX), Adams (SeanAda) and Schaefer (Digister). The following graphic shows the roles assigned to each team member:
+![RUP Teamroles](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/RUP roles.png)
 
 This blog deals with software engineering principles and methods which are needed for a successful project.
 Every progress and change will be tracked in this blog to create a comprehensible project schedule. Follow 
 [this link](http://unveiled.systemgrid.de/wp/blog/) to take a look at our blog!
 
+
+##Overall Use Case Diagram (OUCD)
+The following picture shows the latest version of our OUCD:
+![Overalll Use Case Diagram](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_Overall Use Case Diagram.png)
+
+
 ##Technologies
 In the following picture, you can see a small layout showing the technologies we use to build our program.
-![Technologies](https://github.com/CodeLionX/Unveiled/blob/master/Dokumente/Bilder/technologies.png)
+![Technologies](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/technologies.png)
+
+
+##DB Schema
+Our Database will consist of these tables:
+![DBSchema](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_DBSchema.png)
