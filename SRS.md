@@ -73,9 +73,86 @@ A separate view shows the user his log in information. On this view he is also a
 If somebody has multiple users and log in information, the app allows him to switch between them.
 
 ### 3.2 Functionylity - Website
+#### 3.2.1 Login/Logout-Page
+At the home page of the website there is the possibility to register for a new user or to log in. You will be redirected to this page after a successful logout.
+
+#### 3.2.2 Profile
+This overview page allows the user to view and maintain his profile.
+
+#### 3.2.3 Media Browser
+At this page all captured and uploaded media of a single user is shown. There is also the possibility to delete certain videos/pictures/….
+
+#### 3.2.4 Download Files
+Captured Media can be downloaded only by the owner. 
+
+#### 3.2.5 Manage User
+At this page the administrator can accept user registration requests and perform several other steps on user data.
+
+#### 3.2.6 Manage Media
+Inappropriate uploads can be deleted by the administrator.
+
+### 3.3 Usability
+#### 3.3.1 Smartphone user
+The user should know how to use Android as an mobile operating system and how to install and use an mobile application on it. We will provide a configuration guide.
+
+#### 3.3.2 Using a browser
+The user of our website has to know how to open and work with a modern browser like Chrome, Firefox or Opera.
+
+#### 3.3.3 Honest person
+We expect the user to be a honest person, who just upload media that makes our society to a better place. Our users should obey the low.
+
+### 3.4 Reliability
+#### 3.4.1 Server availability
+(tbd)
+
+#### 3.4.2 MTTR
+(tbd)
+
+#### 3.4.3 Compliant to RFC…
+(tbd)
+
+### 3.5 Performance
+(tbd)
+
+### 3.6 Supportability
+#### 3.6.1 Language support
+We will use the following languages, which will also be well supported in the future:
+- Java EE 7 (Work on Java EE 8 is already in progress)
+- Android 6.0 (Marshmallow)
+- the well-known Internet Standards HTML5, CSS3 and JavaScript
+- tbd
+
+#### 3.6.2 Support for dependencies
+(tbd)
+
+### 3.7 Design Contraints
+(tbd)
+
+### 3.8 On-line User Documentation and Help System Requirements
+The whole application will be built with an intuitive design, so there shouldn’t be a need for the user to ask us or the program for help. However the website should have an inbuilt online help, which is able to guide the user through certain steps. We also write our own blog, on which users can find information and ask us questions.
+
+### 3.9 Purchased Components
+(n/a)
+
+### 3.10 Interfaces
+(tbd)
+#### 3.10.1 User Interfaces
+#### 3.10.2 Hardware Interfaces
+#### 3.10.3 Software Interfaces
+#### 3.10.4 Communications Interfaces
+
+### 3.11 Licensing Requirement
+(tbd)
+
+### 3.12 Legal, Copyright and other Notices
+(tbd)
+
+### 3.13 Applicable Standards
+(tbd)
+- eg. RFC1889 (https://tools.ietf.org/html/rfc1889)
 
 ## 4. Supporting Information
-
+(tbd)
 
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
