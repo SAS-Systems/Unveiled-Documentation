@@ -39,4 +39,4 @@ The user should have already opened the Unveiled Android Application on his smar
 
 
 <!-- Link definitions: -->
-[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Take Video_Alt1.png "Use Case Diagram: Take Video"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Kopie%20von%20UC_Diagram_Take%20Video_Alt1.png "Use Case Diagram: Take Video"
