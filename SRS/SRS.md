@@ -23,10 +23,10 @@ In this section definitions and explanations of acronyms and abbreviations are l
 
 
 ### 1.4 References
-|Title|Date|
-|---|---|
-|[Overall Use Case Diagram (OUCD)]|16.10.15|
-|[more links]()|DD/MM/YYYY|
+|			Title					|	Date	|
+|-----------------------------------|-----------|
+|[Overall Use Case Diagram (OUCD)]	|16.10.15	|
+|[more links]()						|DD/MM/YYYY	|
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and 
@@ -154,7 +154,10 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 ## 4. Supporting Information
 (tbd)
 
+
+<!-- Link definitions: -->
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
 
-[OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
+<!-- Picture-Link definitions: -->
+[OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png
