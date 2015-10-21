@@ -26,7 +26,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 |Title|Date|
 |---|---|
 |[Overall Use Case Diagram (OUCD)]|16.10.15|
-|[<more links>](<link>)|<DD/MM/YYYY>|
+|[more links](link)|DD/MM/YYYY|
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and 
