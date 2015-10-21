@@ -154,7 +154,7 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 ## 4. Supporting Information
 (tbd)
 
-[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
+[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/doku/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
 
-[OUCD]: https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
+[OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
