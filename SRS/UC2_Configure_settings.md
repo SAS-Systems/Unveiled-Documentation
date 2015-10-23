@@ -7,12 +7,12 @@ Configure settings in Android App.
 The user is able to configure settings like server FQDN and login-data to access the streaming server. Addionally the user has the ability to change general picture and video settings.
 
 ### 1.2 Screenshot Mockup
-![screenshot][]
+![][screenshot]
 
 ## 2. Flow of Events
 
 ### 2.1 Basic Flow
-![basic flow][]
+![][basic flow]
 
 ### 2.2 Alternative Flow
 (n/a)

@@ -23,10 +23,12 @@ In this section definitions and explanations of acronyms and abbreviations are l
 
 
 ### 1.4 References
-|			Title					|	Date	|
-|-----------------------------------|-----------|
-|[Overall Use Case Diagram (OUCD)]	|16.10.15	|
-|[more links]()						|DD/MM/YYYY	|
+|			Title									|	Date		|
+|---------------------------------------------------|---------------|
+|[Overall Use Case Diagram (OUCD)]					| 16.10.2015	|
+|[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
+|[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
+|[more links]()										| DD/MM/YYYY	|
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and 
@@ -46,7 +48,7 @@ People using our App can take pictures and videos which are immediately uploaded
 private library only accessible to the owner. Through a web based interface you are able to publish your recorded content.
 
 The following picture shows the overall use case diagram of our software:
-![OUCD][]
+![OUCD]
 
 ## 3. Specific Requirements
 ### 3.1 Functionality - Android App
@@ -57,11 +59,11 @@ The login page of the app enables the user to get access to his account.
 The user is able to take pictures with the smartphone camera. The picture will be instantly uploaded to a server.
 
 #### 3.1.3 Take Video
-The user is able to film with the smartphone camera. The captured video material is live streamed to a server to store the 
-data.
+The user is able to film with the smartphone camera. The captured video material is live streamed to a server to store the data.
+There is a detached [document][uc capture video] describing this use case more precisely.
 
 #### 3.1.4 Settings
-A settings option provides the user to choose the resolution and receiving server by himself.
+A settings option provides the user to choose the resolution and receiving server by himself. See also our  separate [document][uc configure settings] for this use case.
 
 #### 3.1.5 Upload Media
 If the automatically upload of the video or picture failed, the user is able to upload the file manually.
@@ -158,6 +160,8 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 <!-- Link definitions: -->
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html 
+[uc capture video]: http://unveiled.systemgrid.de/wp/UC1/ "Use Case 1: Capture and stream video"
+[uc configure settings]: http://unveiled.systemgrid.de/wp/UC2/ "Use Case 2: Configure settings"
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"

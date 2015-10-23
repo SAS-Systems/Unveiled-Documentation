@@ -8,13 +8,13 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 
 ### 1.2 Screenshot Mockup
 
-![screenshot][]
+![][screenshot]
 
 
 ## 2. Flow of Events
 
 ### 2.1 Basic Flow
-![basic flow][]
+![][basic flow]
 
 ### 2.2 Alternative Flow
 (n/a)
