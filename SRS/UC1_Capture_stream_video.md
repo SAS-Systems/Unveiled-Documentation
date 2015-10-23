@@ -1,8 +1,14 @@
 # Unveiled - Use-Case Specification: Capture and stream video
 
 ## 1. Use-Case Name
+Capture and stream video.
+
 ### 1.1 Brief Description
 The user is able to capture videos through the inbuilt camera of his Android smartphone. He can see the preview, start and stop the stream.
+
+### 1.2 Screenshot Mockup
+
+![screenshot][]
 
 
 ## 2. Flow of Events
@@ -42,3 +48,5 @@ N/A
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Kopie%20von%20UC_Diagram_Take%20Video_Alt1.png "Use Case Diagram: Take Video"
+
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Camera.PNG "Camera Mockup"
