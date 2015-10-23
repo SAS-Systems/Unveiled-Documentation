@@ -45,6 +45,6 @@ The following use cases require this use case to be completed:
 N/A
 
 <!-- Link definitions: -->
-[basic flow]:  "Use Case Diagram: Configure settings"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Configure_settings.png "Use Case Diagram: Configure settings"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Settings.PNG "Settings-Screen Mockup"

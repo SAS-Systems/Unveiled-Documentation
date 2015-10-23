@@ -156,8 +156,8 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 
 
 <!-- Link definitions: -->
-[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png
-[Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
+[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
+[Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html 
 
 <!-- Picture-Link definitions: -->
-[OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png
+[OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
