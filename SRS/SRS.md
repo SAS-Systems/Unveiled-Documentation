@@ -160,8 +160,8 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 <!-- Link definitions: -->
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html 
-[uc capture video]: http://unveiled.systemgrid.de/wp/UC1/ "Use Case 1: Capture and stream video"
-[uc configure settings]: http://unveiled.systemgrid.de/wp/UC2/ "Use Case 2: Configure settings"
+[uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
+[uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
