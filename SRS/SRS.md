@@ -48,7 +48,7 @@ People using our App can take pictures and videos which are immediately uploaded
 private library only accessible to the owner. Through a web based interface you are able to publish your recorded content.
 
 The following picture shows the overall use case diagram of our software:
-![OUCD]
+![OUCD][]
 
 ## 3. Specific Requirements
 ### 3.1 Functionality - Android App
