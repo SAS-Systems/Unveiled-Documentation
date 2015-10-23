@@ -1,4 +1,4 @@
-# Unveiled - Use-Case Specification: Take Video
+# Unveiled - Use-Case Specification: Capture and stream video
 
 ## 1. Use-Case Name
 ### 1.1 Brief Description
