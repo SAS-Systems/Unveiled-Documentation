@@ -16,7 +16,10 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 
 ## 3. Special Requirements
 
-### 3.1 Special Requirement 1
+### 3.1 Use streaming protocol
+RTSP-Stream
+
+(tbd)
 
 
 ## 4. Preconditions
@@ -30,13 +33,12 @@ The user should have already opened the Unveiled Android Application on his smar
 
 ## 5. Postconditions
 
-### 5.1 Post. one
+N/A
 
 
 ## 6. Extension Points
 
-### 6.1 Name of Ext. P. one
-
+N/A
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Kopie%20von%20UC_Diagram_Take%20Video_Alt1.png "Use Case Diagram: Take Video"
