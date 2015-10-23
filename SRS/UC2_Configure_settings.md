@@ -5,10 +5,9 @@ Configure settings in Android App.
 
 ### 1.1 Brief Description
 The user is able to configure settings like server FQDN and login-data to access the streaming server. Addionally the user has the ability to change general picture and video settings.
+
 ### 1.2 Screenshot Mockup
-
 ![screenshot][]
-
 
 ## 2. Flow of Events
 
@@ -26,15 +25,14 @@ The user is able to configure settings like server FQDN and login-data to access
 
 ## 4. Preconditions
 
-### 4.1 Approved user and correct settings
-Before the user is able to manage settings, he should have an valid account on the server specified in the settings.
+### 4.1 Approved user
+Before the user is able to manage settings, he should have an valid account on the server he will specify in the settings.
 
 ### 4.2 User on the main page
-The user should have already opened the Unveiled Android Application on his smartphone, navigated to the seetings screen.
-
+The user should have already opened the Unveiled Android Application on his smartphone and navigated to the seetings screen.
 
 ## 5. Postconditions
-
+The following use cases require this use case to be completed:
 * Login
 * Maintain profile
 * Capture videos and photos
