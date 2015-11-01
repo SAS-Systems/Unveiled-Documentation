@@ -5,35 +5,31 @@ Feature: Settings
 		and stream with another resolution
 		and instantly upload captured pictures
 
-@wip
-Scenario: change server IP
-		Given I see "settings screen"
-		When I change "IP"
-		Then I should see a changed "IP"
+  @wip
+  Scenario Outline: change settings entry
+		  Given I see "settings screen"
+		  And all entries are empty
+		  When I choose <entry>
+          And I type <value>
+		  Then I should see <value> on the display
 
-@wip
-Scenario: change server port
-		Given I see "settings screen"
-		When I change "port"
-		Then I should see a changed "port"
-			
-@wip
-Scenario: change video quality
-		Given I see "setting screen"
-		When I select "resolution"
-		Then I should see a changed "resolution"
-		
-@wip
-Scenario: change picture upload to instant upload
-		Given I see "setting screen"
-		When I check "instant upload"
-		Then I should see a checked check box
-		
-@wip
-Scenario: change picture upload to not instant upload
-		Given I see "setting screen"
-		When I uncheck "instant upload"
-		Then I should see an unchecked check box
+  Examples:
+	| entry   | value |
+    | "IP"    | "192.168.2.1" |
+    | "port"  | "50000"       |
+    | "resolution" | "1080x1920" |
+
+  @wip
+  Scenario: change picture upload to instant upload
+		  Given I see "setting screen"
+		  When I check "instant upload"
+		  Then I should see a checked check box on the display
+
+  @wip
+  Scenario: change picture upload to not instant upload
+		  Given I see "setting screen"
+		  When I uncheck "instant upload"
+		  Then I should see an unchecked check box on the display
 		
 		
 		
