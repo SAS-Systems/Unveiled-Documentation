@@ -13,6 +13,7 @@ The user is able to configure settings like server FQDN and login-data to access
 
 ### 2.1 Basic Flow
 ![][basic flow]
+![][gherkin]
 
 ### 2.2 Alternative Flow
 (n/a)
@@ -48,3 +49,4 @@ N/A
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Configure_settings.png "Use Case Diagram: Configure settings"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Settings.PNG "Settings-Screen Mockup"
+[gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Gherkin_Features/feature_settings.PNG "feature description in gherkin"
