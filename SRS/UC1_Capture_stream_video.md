@@ -15,6 +15,7 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 
 ### 2.1 Basic Flow
 ![][basic flow]
+![][gherkin]
 
 ### 2.2 Alternative Flow
 (n/a)
@@ -50,3 +51,4 @@ N/A
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Capture_stream_video.png "Use Case Diagram: Take Video"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Camera.PNG "Camera Mockup"
+[gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Gherkin_Features/feature_capture_video.PNG "Feature description in Gherkin"
