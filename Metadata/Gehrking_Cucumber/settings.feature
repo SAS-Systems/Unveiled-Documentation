@@ -7,7 +7,7 @@ Feature: Settings
 
   @wip
   Scenario Outline: change settings entry
-		  Given I see "settings screen"
+		  Given I see settings screen
 		  And all entries are empty
 		  When I choose <entry>
           And I type <value>

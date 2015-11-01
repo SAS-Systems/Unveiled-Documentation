@@ -8,7 +8,7 @@ Feature: capture video and stream it
   @wip
   Scenario: start video preview
 	  Given all settings are set
-	  And I see "homescreen"
+	  And I see homescreen
 	  When I press the button "capture video/photo"
 	  Then I should see a video preview on the display
 
@@ -31,7 +31,7 @@ Feature: capture video and stream it
   @wip
   Scenario: failed to login
 	  Given all settings are set
-	  And I see "homescreen"
+	  And I see homescreen
 	  And The server is not available
 	  When I press the button "capture video/photo"
 	  Then I should see "Failed to connect to server!" on the display
