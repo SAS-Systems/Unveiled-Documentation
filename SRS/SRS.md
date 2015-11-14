@@ -19,6 +19,7 @@ their own media.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
+
 - **Android** This is a mobile operating system developed by Google for primarily use on smartphones and tablets.
 - **UCD** Use Case Diagram
 - **SAD** Software Architecture Document
@@ -123,6 +124,7 @@ We expect the user to be a honest person, who just upload media that makes our s
 ### 3.6 Supportability
 #### 3.6.1 Language support
 We will use the following languages, which will also be well supported in the future:
+
 - Java EE 7 (Work on Java EE 8 is already in progress)
 - Android 6.0 (Marshmallow)
 - the well-known Internet Standards HTML5, CSS3 and JavaScript
