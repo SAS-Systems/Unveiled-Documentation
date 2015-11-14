@@ -20,6 +20,8 @@ their own media.
 ### 1.3 Definitions, Acronyms and Abbreviations
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
 - **Android** This is a mobile operating system developed by Google for primarily use on smartphones and tablets.
+- **UCD** Use Case Diagram
+- **SAD** Software Architecture Document
 
 
 ### 1.4 References
@@ -28,6 +30,8 @@ In this section definitions and explanations of acronyms and abbreviations are l
 |[Overall Use Case Diagram (OUCD)]					| 16.10.2015	|
 |[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
 |[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
+|[Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
+|[Software Architecture Document TODO!][sad]		| 15.11.2015	|
 |[more links]()										| DD/MM/YYYY	|
 
 ### 1.5 Overview
@@ -162,6 +166,10 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html 
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
+
+[class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
+
+[sad]: / "Software Architecture Document"
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
