@@ -32,7 +32,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 |[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
 |[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
 |[Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-|[Software Architecture Document TODO!][sad]		| 15.11.2015	|
+|[Software Architecture Document][sad]		| 15.11.2015	|
 |[more links]()										| DD/MM/YYYY	|
 
 ### 1.5 Overview
