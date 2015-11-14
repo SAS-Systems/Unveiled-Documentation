@@ -66,6 +66,7 @@ We've used the inbuild MVC framework of Android and Android Studio to implement 
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
+[class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 
 <!-- picture definitions: -->
 [mvc android]: http://www.cs.ccsu.edu/~stan/classes/CS355/notes/images/AndroidMVC.png "MVC in Android"

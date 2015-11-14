@@ -168,10 +168,8 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html 
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
-
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
-
-[sad]: / "Software Architecture Document"
+[sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
