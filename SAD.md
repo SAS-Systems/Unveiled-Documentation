@@ -32,6 +32,7 @@ This document is about our overall architectural design ideas. The following cha
 
 ## 2. Architectural Representation
 The following graphic shows the general structure of the Android MVC concept:
+
 ![mvc android][]
 
 ## 3. Architectural Goals and Constraints
@@ -43,23 +44,49 @@ We've used the inbuild MVC framework of Android and Android Studio to implement 
 ## 5. Logical View
 
 ### 5.1 Overview
+In the following picture our class diagrams are shown. The classes are marked in colors depending on the MVC membership: 
+
+- **Yellow/Orange:** Model components
+- **Blue:** Controller components
+- **Green:** View components
+
+![mvc overview][]
+
+In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different settings. Also every class is connected to the server connection class except the main activity to get their data from the server. 
 
 ### 5.2 Architecturally Significant Design Packages
+
+#### 5.2.1 Model
+The DB schema is described in chapter 9.
+The model classes of our PHP-Backendstack is shown below:
+![model PHP][]
+
+#### 5.2.2 View
+The view components of our Android App consist of multiple XML-Files. They can't be shown in a class diagram.
+
+#### 5.2.3 Controller
+In the following diagram you can see the Java-Classes representing the controller components of our Android App:
+![controller android][]
 
 ## 6. Process View
 (n/a)
 
 ## 7. Deployment View
-In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different cases. Also every class is connected to the server connection class except the main activity.  
+Our MVC architecture is spread over several different devices. Our server includes a database and the model components. Our Android App gets his data from our server and only has to implement the controllers and the views of the MVC pattern. The same applies to our website.
+![deployment diagram][]
 
 ## 8. Implementation View
 (n/a)
 
-### 9. Data View (optional)
+## 9. Data View (optional)
+
+![data model][]
 
 ## 10. Size and Performance
+(n/a)
 
 ## 11. Quality
+(n/a)
 
 
 <!-- Link definitions: -->
@@ -71,3 +98,8 @@ In our UML diagram every activity class is assigned to a XML view. The settings 
 
 <!-- picture definitions: -->
 [mvc android]: http://www.cs.ccsu.edu/~stan/classes/CS355/notes/images/AndroidMVC.png "MVC in Android"
+[deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment Diagram"
+[mvc overview]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_overview.png "MVC architecture overview"
+[data model]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_DBSchema.png "DB model"
+[model php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "UML class diagram of the model"
+[controller android]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Controller.png "UML class diagram of the Android App controller"
