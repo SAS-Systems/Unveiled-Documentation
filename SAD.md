@@ -20,7 +20,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
-|[Software Requirement Specification (SRS)][SRS] | 14.11.2015	|
+|[Software Requirement Specification (SRS)][SRS] 	| 14.11.2015	|
 |[Overall Use Case Diagram (OUCD)]					| 16.10.2015	|
 |[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
 |[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
