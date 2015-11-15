@@ -59,6 +59,7 @@ In our UML diagram every activity class is assigned to a XML view. The settings 
 #### 5.2.1 Model
 The DB schema is described in chapter 9.
 The model classes of our PHP-Backendstack is shown below:
+
 ![model PHP][]
 
 #### 5.2.2 View
@@ -66,6 +67,7 @@ The view components of our Android App consist of multiple XML-Files. They can't
 
 #### 5.2.3 Controller
 In the following diagram you can see the Java-Classes representing the controller components of our Android App:
+
 ![controller android][]
 
 ## 6. Process View
@@ -73,6 +75,7 @@ In the following diagram you can see the Java-Classes representing the controlle
 
 ## 7. Deployment View
 Our MVC architecture is spread over several different devices. Our server includes a database and the model components. Our Android App gets his data from our server and only has to implement the controllers and the views of the MVC pattern. The same applies to our website.
+
 ![deployment diagram][]
 
 ## 8. Implementation View
@@ -99,7 +102,7 @@ Our MVC architecture is spread over several different devices. Our server includ
 <!-- picture definitions: -->
 [mvc android]: http://www.cs.ccsu.edu/~stan/classes/CS355/notes/images/AndroidMVC.png "MVC in Android"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment Diagram"
-[mvc overview]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_overview.png "MVC architecture overview"
+[mvc overview]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Overview.png "MVC architecture overview"
 [data model]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_DBSchema.png "DB model"
 [model php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "UML class diagram of the model"
 [controller android]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Controller.png "UML class diagram of the Android App controller"
