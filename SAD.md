@@ -25,6 +25,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 |[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
 |[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
 |[Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
+|[UML diagrams (Github)][uml diagrams]				| 15.11.2015	|
 |[more links]()										| DD/MM/YYYY	|
 
 ### 1.5 Overview
@@ -98,6 +99,7 @@ Our MVC architecture is spread over several different devices. Our server includ
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
+[uml diagrams]: https://github.com/SAS-Systems/Unveiled-Documentation/tree/master/Bilder/UML%20Class%20diagrams "UML diagrams"
 
 <!-- picture definitions: -->
 [mvc android]: http://www.cs.ccsu.edu/~stan/classes/CS355/notes/images/AndroidMVC.png "MVC in Android"
