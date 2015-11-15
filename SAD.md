@@ -50,6 +50,7 @@ We've used the inbuild MVC framework of Android and Android Studio to implement 
 (n/a)
 
 ## 7. Deployment View
+In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different cases. Also every class is connected to the server connection class except the main activity.  
 
 ## 8. Implementation View
 (n/a)
