@@ -1,4 +1,4 @@
-# Unveiled - Use-Case Specification: Configure settings
+# Unveiled - Use-Case Specification: Switch user
 
 ## 1. Use-Case Name
 Switch user in Android App.
@@ -8,12 +8,14 @@ In the settings screen the user is able to type in login information for the spe
 
 ### 1.2 Screenshot Mockup
 ![][screenshot]
+(tbd)
 
 ## 2. Flow of Events
 
 ### 2.1 Basic Flow
 ![][basic flow]
 ![][gherkin]
+(tbd)
 
 ### 2.2 Alternative Flow
 (n/a)
@@ -41,7 +43,7 @@ The following use cases require this use case to be completed:
 N/A
 
 <!-- Link definitions: -->
-[basic flow]: .. "Use Case Diagram: Switch user"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Switch_user.png "Use Case Diagram: Switch user"
 
 [screenshot]: .. "Settings-Screen Mockup"
 [gherkin]: .. "feature description in gherkin"

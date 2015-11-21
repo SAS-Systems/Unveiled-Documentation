@@ -63,7 +63,8 @@ able to change the server connection details. See also our separate [document][u
 
 #### 3.1.2 Switch user
 On this page the user is able to type in his/her login information.
-If somebody has multiple users and log in information, the application allows him to switch between them as well.
+If somebody has multiple users and log in information, the application allows him to switch between them as well. To see the use case diagram
+of this use case got to this [document][uc switch user].
 
 #### 3.1.3 Take Picture
 The user is able to take pictures with the smartphone camera. The picture will be instantly uploaded to a server.
@@ -165,6 +166,7 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
+[uc switch user]: http://unveiled.systemgrid.de/wp/srs_sc4/ "User Case 4: Switch user"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
 
