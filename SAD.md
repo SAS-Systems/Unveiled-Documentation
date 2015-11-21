@@ -10,7 +10,7 @@ This document provides a comprehensive architectural overview of the system, usi
 
 ### 1.2 Scope
 This document provides project internal information to the overall architecture of the application. It provides the guidlines regarding the software architectural design.
- 
+
 ### 1.3 Definitions, Acronyms and Abbreviations
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
 
@@ -45,7 +45,7 @@ We've used the inbuild MVC framework of Android and Android Studio to implement 
 ## 5. Logical View
 
 ### 5.1 Overview
-In the following picture our class diagrams are shown. The classes are marked in colors depending on the MVC membership: 
+In the following picture our class diagrams are shown. The classes are marked in colors depending on the MVC membership:
 
 - **Yellow/Orange:** Model components
 - **Blue:** Controller components
@@ -53,7 +53,7 @@ In the following picture our class diagrams are shown. The classes are marked in
 
 ![mvc overview][]
 
-In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different settings. Also every class is connected to the server connection class except the main activity to get their data from the server. 
+In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different settings. Also every class is connected to the server connection class except the main activity to get their data from the server.
 
 ### 5.2 Architecturally Significant Design Packages
 
@@ -102,7 +102,7 @@ Our MVC architecture is spread over several different devices. Our server includ
 [uml diagrams]: https://github.com/SAS-Systems/Unveiled-Documentation/tree/master/Bilder/UML%20Class%20diagrams "UML diagrams"
 
 <!-- picture definitions: -->
-[mvc android]: http://www.cs.ccsu.edu/~stan/classes/CS355/notes/images/AndroidMVC.png "MVC in Android"
+[mvc android]: http://3.bp.blogspot.com/-GJ_aYkMBpVQ/TgjNUlZoe-I/AAAAAAAAACM/PfOOsk6_DCg/s1600/AndroidArch.png "MVC in Android"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment Diagram"
 [mvc overview]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Overview.png "MVC architecture overview"
 [data model]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_DBSchema.png "DB model"
