@@ -57,25 +57,24 @@ The following picture shows the overall use case diagram of our software:
 
 ## 3. Specific Requirements
 ### 3.1 Functionality - Android App
-#### 3.1.1 Login-Page
-The login page of the app enables the user to get access to his account.
-
-#### 3.1.2 Take Picture
-The user is able to take pictures with the smartphone camera. The picture will be instantly uploaded to a server.
-
-#### 3.1.3 Take Video
-The user is able to film with the smartphone camera. The captured video material is live streamed to a server to store the
-data. There is a detached [document][uc capture video] describing this use case more precisely.
-
-#### 3.1.4 Settings
+#### 3.1.1 Settings
 A settings option provides the user the possibility to choose the quality of the video and photo by himself. In this menu the user is also
 able to change the server connection details. See also our separate [document][uc configure settings] for this use case.
 
-#### 3.1.5 Upload Media
+#### 3.1.2 Switch user
+On this page the user is able to type in his/her login information.
+If somebody has multiple users and log in information, the application allows him to switch between them as well.
+
+#### 3.1.3 Take Picture
+The user is able to take pictures with the smartphone camera. The picture will be instantly uploaded to a server.
+
+#### 3.1.4 Take Video
+The user is able to film with the smartphone camera. The captured video material is live streamed to a server to store the
+data. There is a detached [document][uc capture video] describing this use case more precisely.
+
+#### 3.1.5 Upload File
 If the automatically upload of the video or picture failed, the user is able to upload the file manually.
 
-#### 3.1.6 Switch user
-If somebody has multiple users and log in information, the application allows him to switch between them.
 
 ### 3.2 Functionylity - Website
 #### 3.2.1 Login/Logout-Page
