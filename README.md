@@ -4,7 +4,7 @@
 
 
 ## TravisCI status
-[![Build Status](https://travis-ci.org/CodeLionX/Unveiled.svg)](https://travis-ci.org/CodeLionX/Unveiled)
+[![Build Status](https://travis-ci.org/SAS-Systems/Unveiled.svg)](https://travis-ci.org/CodeLionX/Unveiled)
 
 
 ## Our Vision
@@ -22,7 +22,7 @@ library only accessible to the owner. Through a web based interface you are able
 
 ## [Our Blog](http://unveiled.systemgrid.de/wp/blog/)
 Our blog is written by the developers of Unveiled (SAS Systems). Our team consits of three guys named Schmidl (CodeLionX), Adams (SeanAda) and Schaefer (Digister). The following graphic shows the roles assigned to each team member:
-![RUP Teamroles](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/RUP roles.png)
+![RUP Teamroles](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/RUP%20roles.png)
 
 This blog deals with software engineering principles and methods which are needed for a successful project.
 Every progress and change will be tracked in this blog to create a comprehensible project schedule. Follow 
@@ -31,14 +31,17 @@ Every progress and change will be tracked in this blog to create a comprehensibl
 
 ##Overall Use Case Diagram (OUCD)
 The following picture shows the latest version of our OUCD:
-![Overalll Use Case Diagram](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_Overall Use Case Diagram.png)
+
+![Overalll Use Case Diagram](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png)
 
 
 ##Technologies
 In the following picture, you can see a small layout showing the technologies we use to build our program.
-![Technologies](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/technologies.png)
+
+![Technologies](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/technologies.png)
 
 
 ##DB Schema
 Our Database will consist of these tables:
-![DBSchema](https://github.com/CodeLionX/Unveiled/blob/doku/Dokumente/Bilder/Unveiled_DBSchema.png)
+
+![DBSchema](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/Unveiled_DBSchema.png)
