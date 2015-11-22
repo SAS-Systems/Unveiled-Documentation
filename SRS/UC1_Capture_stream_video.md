@@ -22,11 +22,8 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 
 
 ## 3. Special Requirements
-
-### 3.1 Use streaming protocol
-RTSP-Stream
-
-(tbd)
+### 3.1 Use streaming protocol: RTSP
+The Android-App and the Java-Backend should transfer their data with the Real Time Streaming Protocol (RTSP) and its subprotocols (RTP, RTCP). Therefore they have to follow RFC 2326 and all related RFCs.
 
 
 ## 4. Preconditions
