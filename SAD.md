@@ -20,13 +20,14 @@ In this section definitions and explanations of acronyms and abbreviations are l
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
-|[Software Requirement Specification (SRS)][SRS] 	| 14.11.2015	|
-|[Overall Use Case Diagram (OUCD)]					| 16.10.2015	|
-|[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
-|[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
-|[Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-|[UML diagrams (Github)][uml diagrams]				| 15.11.2015	|
-|[more links]()										| DD/MM/YYYY	|
+| [Software Requirement Specification (SRS)][SRS] | 14.11.2015	|
+| [Overall Use Case Diagram (OUCD)] | 16.10.2015	|
+| [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
+| [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
+| [UC3: Maintain profile][uc maintain profile] | 22.11.2015 |
+| [UC4: Switch user][uc switch user] | 21.11.2015 |
+| [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
+| [UML diagrams (Github)][uml diagrams] | 15.11.2015	|
 
 ### 1.5 Overview
 This document is about our overall architectural design ideas. The following chapters explaining them from different views.
@@ -98,6 +99,8 @@ Our MVC architecture is spread over several different devices. Our server includ
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
+[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_sc3/ "User Case 3: Maintain profile"
+[uc switch user]: http://unveiled.systemgrid.de/wp/srs_sc4/ "User Case 4: Switch user"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [uml diagrams]: https://github.com/SAS-Systems/Unveiled-Documentation/tree/master/Bilder/UML%20Class%20diagrams "UML diagrams"
 

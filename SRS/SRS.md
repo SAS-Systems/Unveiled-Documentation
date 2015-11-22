@@ -28,12 +28,13 @@ In this section definitions and explanations of acronyms and abbreviations are l
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
-|[Overall Use Case Diagram (OUCD)]					| 16.10.2015	|
-|[UC1: Capture and stream video][uc capture video]	| 23.10.2015	|
-|[UC2: Configure settigns][uc configure settings]	| 23.10.2015	|
-|[Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-|[Software Architecture Document][sad]		| 15.11.2015	|
-|[more links]()										| DD/MM/YYYY	|
+| [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
+| [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
+| [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
+| [UC3: Maintain profile][uc maintain profile] | 22.11.2015 |
+| [UC4: Switch user][uc switch user] | 21.11.2015 |
+| [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
+| [Software Architecture Document][sad]		| 15.11.2015	|
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and
@@ -81,8 +82,8 @@ If the automatically upload of the video or picture failed, the user is able to 
 #### 3.2.1 Login/Logout-Page
 At the home page of the website there is the possibility to register for a new user or to log in. You will be redirected to this page after a successful logout.
 
-#### 3.2.2 Profile
-This overview page allows the user to view and maintain his profile.
+#### 3.2.2 Maintain Profile
+This overview page allows the user to view and maintain his profile. A more detailed description can be found [here][uc switch user].
 
 #### 3.2.3 Media Browser
 At this page all captured and uploaded media of a single user is shown. There is also the possibility to delete certain videos/pictures/â€¦.
@@ -131,7 +132,7 @@ We will use the following languages, which will also be well supported in the fu
 #### 3.6.2 Support for dependencies
 (tbd)
 
-### 3.7 Design Contraints
+### 3.7 Design Constraints
 (tbd)
 
 ### 3.8 On-line User Documentation and Help System Requirements
@@ -166,6 +167,7 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
+[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_sc3/ "User Case 3: Maintain profile"
 [uc switch user]: http://unveiled.systemgrid.de/wp/srs_sc4/ "User Case 4: Switch user"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
