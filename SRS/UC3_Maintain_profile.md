@@ -37,5 +37,6 @@ No use cases require this use case to be completed.
 N/A
 
 <!-- Link definitions: -->
-[basic flow]: .. "Use Case Diagram: Configure settings"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Maintain_profile.png "Use Case Diagram: Configure settings"
+
 [screenshot]: .. "Settings-Screen Mockup"
