@@ -99,8 +99,8 @@ Our MVC architecture is spread over several different devices. Our server includ
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
-[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_sc3/ "User Case 3: Maintain profile"
-[uc switch user]: http://unveiled.systemgrid.de/wp/srs_sc4/ "User Case 4: Switch user"
+[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_uc3/ "User Case 3: Maintain profile"
+[uc switch user]: http://unveiled.systemgrid.de/wp/srs_uc4/ "User Case 4: Switch user"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [uml diagrams]: https://github.com/SAS-Systems/Unveiled-Documentation/tree/master/Bilder/UML%20Class%20diagrams "UML diagrams"
 
