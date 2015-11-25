@@ -11,10 +11,12 @@ The user is able to view and change his profile information on our website. The 
 - Password
 
 ### 1.2 Screenshot Mockup
+
 ![][screenshot]
 
 ## 2. Flow of Events
 ### 2.1 Basic Flow
+
 ![][basic flow]
 On the profile page the users profile information is shown, which include the users name and EMail-address. He is able to change them easily.
 Additionally he can set a new password by entering the old one and the new one twice.
