@@ -1,4 +1,4 @@
-# Unveiled - Use-Case Specification: Switch user
+# Unveiled - Use-Case Specification: Register
 
 ## 1. Use-Case Name
 Register for a new account on our hompage.

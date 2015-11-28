@@ -34,6 +34,6 @@ For this use case the user has to have a valid account on the server and he has 
 (n/a)
 
 <!-- Link definitions: -->
-[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Browse_media.png "Use Case Diagram: Register"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/browse_media.PNG "Use Case Diagram: Register"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/browse_media "Screenshot media browser"
