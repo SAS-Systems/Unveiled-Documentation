@@ -81,7 +81,7 @@ data. There is a detached [document][uc capture video] describing this use case 
 If the automatically upload of the video or picture failed, the user is able to upload the file manually.
 
 
-### 3.2 Functionylity - Website
+### 3.2 Functionality - Website
 #### 3.2.1 Register for a new account
 At the home page of the website there is the possibility to register for a new user. A registration has to be approved by an administrator.
 
