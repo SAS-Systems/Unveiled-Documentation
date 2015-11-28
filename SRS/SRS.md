@@ -12,7 +12,7 @@ characteristics of this project will be specified. This includes design and arch
 these criteria as well.
 
 ### 1.2 Scope
-This software specification applies to the whole "Unveiled" application. It consists of two parts: The first part is an
+This software specification applies to the whole "Unveiled" application. The application consists of two parts: The first part is an
 Android-App, which allows users to take pictures and videos with their smartphone. It establishes a livestream to a server which
 stores the captured media in a private library. The second part is a website allowing users to browse, download and publish
 their own media.
@@ -21,7 +21,9 @@ their own media.
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
 
 - **Android** This is a mobile operating system developed by Google for primarily use on smartphones and tablets.
+- **UC** Use Case
 - **UCD** Use Case Diagram
+- **OUCD** Overall Use Case Diagram
 - **SAD** Software Architecture Document
 
 
@@ -31,10 +33,11 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
 | [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
 | [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
-| [UC3: Maintain profile][uc maintain profile] | 22.11.2015 |
+| [UC3: Maintain user profile][uc maintain profile] | 22.11.2015 |
 | [UC4: Switch user][uc switch user] | 21.11.2015 |
 | [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-| [Software Architecture Document][sad]		| 15.11.2015	|
+| [Software Architecture Document][sad] | 15.11.2015	|
+| [Deployment Diagram][deployment diagram] | 28.11.2015 |
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and
@@ -65,7 +68,7 @@ able to change the server connection details. See also our separate [document][u
 #### 3.1.2 Switch user
 On this page the user is able to type in his/her login information.
 If somebody has multiple users and log in information, the application allows him to switch between them as well. To see the use case diagram
-of this use case got to this [document][uc switch user].
+of this use case go to this [document][uc switch user].
 
 #### 3.1.3 Take Picture
 The user is able to take pictures with the smartphone camera. The picture will be instantly uploaded to a server.
@@ -79,22 +82,34 @@ If the automatically upload of the video or picture failed, the user is able to 
 
 
 ### 3.2 Functionylity - Website
-#### 3.2.1 Login/Logout-Page
-At the home page of the website there is the possibility to register for a new user or to log in. You will be redirected to this page after a successful logout.
+#### 3.2.1 Register for a new account
+At the home page of the website there is the possibility to register for a new user. A registration has to be approved by an administrator.
 
-#### 3.2.2 Maintain Profile
+#### 3.2.2 Login-Page
+The website contains a login-form for users that have already registered for an account. 
+
+#### 3.2.3 Maintain Profile
 This overview page allows the user to view and maintain his profile. A more detailed description can be found [here][uc switch user].
 
-#### 3.2.3 Media Browser
-At this page all captured and uploaded media of a single user is shown. There is also the possibility to delete certain videos/pictures/â€¦.
+#### 3.2.4 Media Browser
+At this page all captured and uploaded media of a single user is shown. He can browse the content easily.
 
-#### 3.2.4 Download Files
-Captured media can be downloaded only by the owner.
+#### 3.2.5 Content viewer
+Each uploaded file is shown in the media browser. To see detailed information and perform actions on the file (content) there is another page showing this information. 
 
-#### 3.2.5 Manage Users
-At this page the administrator can accept user registration requests and perform several other steps on user data.
+#### 3.2.6 Delete files
+The user is able to delete his own media stored on the server.
 
-#### 3.2.6 Manage Media
+#### 3.2.7 Download files
+Captured media can be downloaded only by the owner. Therefore he is able to select specific files in the media browser for download.
+
+#### 3.2.8 Approve registration
+At this page the administrator can accept user registration requests.
+ 
+#### 3.2.9 Manage Users
+The administrator is able to perform several different functions on user data.
+
+#### 3.2.10 Manage Media
 Inappropriate uploads can be deleted by the administrator.
 
 ### 3.3 Usability
@@ -105,7 +120,7 @@ The user should know how to use Android as an mobile operating system and how to
 The user of our website has to know how to open and work with a modern browser like Chrome, Firefox or Opera.
 
 #### 3.3.3 Honest person
-We expect the user to be a honest person, who just upload media that makes our society to a better place. Our users should obey the low.
+We expect the user to be a honest person, who just upload media that makes our world a better place. Our users should obey the law.
 
 ### 3.4 Reliability
 #### 3.4.1 Server availability
@@ -114,8 +129,8 @@ We expect the user to be a honest person, who just upload media that makes our s
 #### 3.4.2 MTTR
 (tbd)
 
-#### 3.4.3 Compliant to RFCâ€¦
-(tbd)
+#### 3.4.3 Compliant to RFC
+Our streaming server and our AndroidApp should be compliant to [RFC 2326][] and [RFC 3550][] to be easily scalable and to ensure a stable and performant stream.
 
 ### 3.5 Performance
 (tbd)
@@ -156,7 +171,11 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 
 ### 3.13 Applicable Standards
 (tbd)
-- eg. RFC1889 (https://tools.ietf.org/html/rfc1889)
+
+RFCs:
+
+- [RFC 3550][] - RTP: A Transport Protocol for Real-Time Applications
+- [RFC 2326][] - Real Time Streaming Protocol (RTSP)
 
 ## 4. Supporting Information
 (tbd)
@@ -169,8 +188,12 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
 [uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_uc3/ "User Case 3: Maintain profile"
 [uc switch user]: http://unveiled.systemgrid.de/wp/srs_uc4/ "User Case 4: Switch user"
-[class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
+[class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
+[deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
+
+[RFC 3550]: https://tools.ietf.org/html/rfc3550
+[RFC 2326]: https://tools.ietf.org/html/rfc2326
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"

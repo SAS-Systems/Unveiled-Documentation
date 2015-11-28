@@ -40,7 +40,7 @@ The following use cases require this use case to be completed:
 
 
 ## 6. Extension Points
-N/A
+(n/a)
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Switch_user.png "Use Case Diagram: Switch user"

@@ -27,6 +27,7 @@ The user is able to configure the information how to access the streaming server
 ### 4.1 User on the main page
 The user should have already opened the Unveiled Android Application on his smartphone and navigated to the settings screen.
 
+
 ## 5. Postconditions
 The following use cases require this use case to be completed:
 - Login

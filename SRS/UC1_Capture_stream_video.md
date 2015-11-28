@@ -23,26 +23,27 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 
 ## 3. Special Requirements
 ### 3.1 Use streaming protocol: RTSP
-The Android-App and the Java-Backend should transfer their data with the Real Time Streaming Protocol (RTSP) and its subprotocols (RTP, RTCP). Therefore they have to follow RFC 2326 and all related RFCs.
+The Android-App and the Java-Backend should transfer their data with the Real Time Streaming Protocol (RTSP) and its subprotocols (RTP, RTCP). Therefore they have to follow [RFC 2326](https://tools.ietf.org/html/rfc2326), [RFC 3550](https://tools.ietf.org/html/rfc3550) and all related RFCs.
 
 
 ## 4. Preconditions
 
-### 4.1 Approved user and correct settings
-Before the user is able to capture video material, he should have an valid account on the server specified in the settings. Also all settings regarding the server connection have to be correct.
+### 4.1 correct settings and network connection
+All settings regarding the server connection have to be correct and an internet connection should excist.
 
-### 4.2 User on the main page
+### 4.2 Approved user
+Before the user is able to capture video material, he should have an valid account on the server specified in the settings. 
+
+### 4.3 User on the main page
 The user should have already opened the Unveiled Android Application on his smartphone, logged in and navigated to the main page.
 
 
 ## 5. Postconditions
-
-N/A
+(n/a)
 
 
 ## 6. Extension Points
-
-N/A
+(n/a)
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Capture_stream_video.png "Use Case Diagram: Take Video"

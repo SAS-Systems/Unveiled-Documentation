@@ -31,7 +31,7 @@ To change the password, the user have to type in his old password. If the old pa
 
 ## 4. Preconditions
 ### 4.1 Approved and logged-in user
-Before the user is able to see and change his profile information, he should have an valid account on the server. Also he has to be logged in.
+Before the user is able to see and change his profile information, he should have an valid account on the server (registered). He has to be logged in as well.
 
 ## 5. Postconditions
 No use cases require this use case to be completed.
