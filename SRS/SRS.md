@@ -156,7 +156,7 @@ We will build our own RTSP streaming library compliant to [RFC 2326][] and [RFC 
 The backend of this software should be written in PHP and Java. The PHP-stack is responsible for a RESTful API that is used both by our webinterface and by the Android application. The Java-stack implements a powerful streaming server that uses the RTP and RTSP protocol as already mentioned.
 
 #### 3.7.2 MVC architecture
-Our Android 
+Our Android application should implement the MVC pattern.
 
 ### 3.8 On-line User Documentation and Help System Requirements
 The whole application will be built with an intuitive design, so there shouldn’t be a need for the user to ask us or the program for help. However the website should have an inbuilt online help, which is able to guide the user through certain steps. We also write our own blog, on which users can find information and ask us questions.
