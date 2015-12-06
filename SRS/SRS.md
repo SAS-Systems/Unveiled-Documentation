@@ -126,13 +126,15 @@ We expect the user to be a honest person, who just upload media that makes our w
 
 ### 3.4 Reliability
 #### 3.4.1 Server availability
-(tbd)
+Our own server should have a 90% up-time to ensure. 
+
+We will also provide an installation-kit so that every institution can host their own streaming server application. In that case the server availability is under the institutions responsibility.
 
 #### 3.4.2 MTTR
-(tbd)
+This is also in the hands of the server owners.
 
 #### 3.4.3 Compliant to RFC
-Our streaming server and our AndroidApp should be compliant to [RFC 2326][] and [RFC 3550][] to be easily scalable and to ensure a stable and performant stream.
+Our streaming server and our AndroidApp should be compliant to [RFC 2326][](RTSP) and [RFC 3550][](RTP) to be easily scalable and to ensure a stable and performant stream (also to other clients and servers if required).
 
 ### 3.5 Performance
 (tbd)
@@ -147,10 +149,14 @@ We will use the following languages, which will also be well supported in the fu
 - tbd
 
 #### 3.6.2 Support for dependencies
-(tbd)
+We will build our own RTSP streaming library compliant to [RFC 2326][] and [RFC 3550][] in Java for our backend. Therefore we can ensure that this library is compatible with our streaming application at any time. At client side we will use libstreaming that is under continuing development and hosted by Github. You can find the source code and the description at their [Github-Page][libstreaming].
 
 ### 3.7 Design Constraints
-(tbd)
+#### 3.7.1 Backend in Java and PHP
+The backend of this software should be written in PHP and Java. The PHP-stack is responsible for a RESTful API that is used both by our webinterface and by the Android application. The Java-stack implements a powerful streaming server that uses the RTP and RTSP protocol as already mentioned.
+
+#### 3.7.2 MVC architecture
+Our Android 
 
 ### 3.8 On-line User Documentation and Help System Requirements
 The whole application will be built with an intuitive design, so there shouldnâ€™t be a need for the user to ask us or the program for help. However the website should have an inbuilt online help, which is able to guide the user through certain steps. We also write our own blog, on which users can find information and ask us questions.
@@ -172,15 +178,16 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 (tbd)
 
 ### 3.13 Applicable Standards
-(tbd)
-
 RFCs:
 
 - [RFC 3550][] - RTP: A Transport Protocol for Real-Time Applications
 - [RFC 2326][] - Real Time Streaming Protocol (RTSP)
 
 ## 4. Supporting Information
+### 4.1 Table of Contents
 (tbd)
+### 4.2 Appendices
+You can find any internal linked sources in the chapter References (go to the top of this document).
 
 
 <!-- Link definitions: -->
@@ -198,6 +205,8 @@ RFCs:
 
 [RFC 3550]: https://tools.ietf.org/html/rfc3550
 [RFC 2326]: https://tools.ietf.org/html/rfc2326
+
+[libstreaming]: https://github.com/fyhertz/libstreaming
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
