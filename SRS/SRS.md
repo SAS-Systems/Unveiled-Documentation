@@ -1,4 +1,4 @@
-# Unveiled - Software Requirements Specification
+﻿# Unveiled - Software Requirements Specification
 
 ## Table of Contents
 (tbd)
@@ -59,7 +59,7 @@ People using our App can take pictures and videos which are immediately uploaded
 private library only accessible to the owner. Through a web based interface you are able to publish your recorded content.
 
 The following picture shows the overall use case diagram of our software:
-[![OUCD]][OUCD]
+![OUCD][]
 
 ## 3. Specific Requirements
 ### 3.1 Functionality - Android App
@@ -191,7 +191,7 @@ You can find any internal linked sources in the chapter References (go to the to
 
 
 <!-- Link definitions: -->
-[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
+[Overall Use Case Diagram (OUCD)]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
 [uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"

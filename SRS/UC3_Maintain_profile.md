@@ -42,4 +42,4 @@ N/A
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Maintain_profile.png "Use Case Diagram: Configure settings"
 
-[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/maintain_profile.png "Settings-Screen Mockup"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/maintain_profile.PNG "Settings-Screen Mockup"
