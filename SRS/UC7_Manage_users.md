@@ -35,5 +35,5 @@ No use cases require this use case to be completed.
 (n/a)
 
 <!-- Link definitions: -->
-[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Switch_user.png "Use Case Diagram: Manage users"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Manage_users.png "Use Case Diagram: Manage users"
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/manage_users.PNG "Manage users screenshot"
