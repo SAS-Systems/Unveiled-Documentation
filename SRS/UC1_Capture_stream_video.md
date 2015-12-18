@@ -14,7 +14,7 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 ## 2. Flow of Events
 
 ### 2.1 Basic Flow
-![][basic flow]
+<!-- ![][basic flow] -->
 ![][gherkin]
 
 ### 2.2 Alternative Flow
@@ -49,4 +49,4 @@ The user should have already opened the Unveiled Android Application on his smar
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Capture_stream_video.png "Use Case Diagram: Take Video"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Camera.PNG "Camera Mockup"
-[gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Gherkin_Features/feature_capture_video.PNG "Feature description in Gherkin"
+[gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/capture_video.png "Feature description in Gherkin"
