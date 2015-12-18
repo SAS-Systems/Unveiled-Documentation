@@ -37,6 +37,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [UC4: Switch user][uc switch user] | 21.11.2015 |
 | [UC5: Register][uc register] | 28.11.2015 |
 | [UC6: Browse own media][uc browse media] | 28.11.2015 |
+| [UC7: Manage Users][uc manage users] | 19.12.2015 |
 | [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
 | [Software Architecture Document][sad] | 15.11.2015	|
 | [Deployment Diagram][deployment diagram] | 28.11.2015 |
@@ -193,12 +194,13 @@ You can find any internal linked sources in the chapter References (go to the to
 <!-- Link definitions: -->
 [Overall Use Case Diagram (OUCD)]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
-[uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
-[uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
-[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_uc3/ "User Case 3: Maintain profile"
-[uc switch user]: http://unveiled.systemgrid.de/wp/srs_uc4/ "User Case 4: Switch user"
-[uc register]: http://unveiled.systemgrid.de/wp/srs_uc5/ "User Case 5: Register"
-[uc browse media]: http://unveiled.systemgrid.de/wp/srs_uc6/ "User Case 6: Browse own media"
+[uc capture video]: http://unveiled.systemgrid.de/wp/docu/srs_uc1/ "Use Case 1: Capture and stream video"
+[uc configure settings]: http://unveiled.systemgrid.de/wp/docu/srs_uc2/ "Use Case 2: Configure settings"
+[uc maintain profile]: http://unveiled.systemgrid.de/wp/docu/srs_uc3/ "Use Case 3: Maintain profile"
+[uc switch user]: http://unveiled.systemgrid.de/wp/docu/srs_uc4/ "Use Case 4: Switch user"
+[uc register]: http://unveiled.systemgrid.de/wp/docu/srs_uc5/ "Use Case 5: Register"
+[uc browse media]: http://unveiled.systemgrid.de/wp/docu/srs_uc6/ "Use Case 6: Browse own media"
+[uc manage users]: http://unveiled.systemgrid.de/wp/docu/srs_uc7/ "Use Case 7: Manage users"
 [class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
