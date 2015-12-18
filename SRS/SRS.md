@@ -110,7 +110,7 @@ Captured media can be downloaded only by the owner. Therefore he is able to sele
 At this page the administrator can accept user registration requests.
  
 #### 3.2.9 Manage Users
-The administrator is able to perform several different functions on user data.
+The administrator is able to perform several different functions on user data. You can read more about this use case [here][uc manage users].
 
 #### 3.2.10 Manage Media
 Inappropriate uploads can be deleted by the administrator.
