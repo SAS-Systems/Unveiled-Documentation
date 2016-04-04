@@ -6,7 +6,6 @@ Approve registration.
 ### 1.1 Brief Description
 The administrator of the web site must approve new user registrations. In a list all not approved users are shown. The administrator is now able to approve the new registrations.
 
-
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -27,7 +26,6 @@ Only users with the administrator-permission are allowed to change user permissi
 
 ### 4.2 Files available
 The user should have already uploaded some files to the server. Otherwise no files are available to deletion.
-
 
 ## 5. Postconditions
 No use cases require this use case to be completed.
