@@ -27,8 +27,10 @@ With our web interface a logged-in user is able to browse through his/her upload
 For this use case the user has to have a valid account on the server and he has to be logged-in.
 
 ## 5. Postconditions
-(n/a)
-
+The following use cases require this use case to be completed:
+- Delete own media
+- View own media
+- Download own media
 
 ## 6. Extension Points
 (n/a)

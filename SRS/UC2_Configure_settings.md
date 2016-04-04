@@ -33,7 +33,6 @@ The user should have already opened the Unveiled Android Application on his smar
 
 ## 5. Postconditions
 The following use cases require this use case to be completed:
-- Login
 - Capture videos and photos
 - Upload file
 - Switch user
