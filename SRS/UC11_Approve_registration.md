@@ -34,5 +34,5 @@ No use cases require this use case to be completed.
 (n/a)
 
 <!-- Link definitions: -->
-[basic flow]:  "Use Case Diagram: Delete media"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Approve_registration.png "Use Case Diagram: Approve Registration"
 [screenshot]:  "Delte Media Screenshot"
