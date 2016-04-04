@@ -36,5 +36,5 @@ No use cases require this use case to be completed.
 (n/a)
 
 <!-- Link definitions: -->
-[basic flow]:  "Use Case Diagram: Delete media"
-[screenshot]:  "Delte Media Screenshot"
+[basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Upload_file.png "Use Case Diagram: Upload file"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Upload%20File.PNG "Upload file screenshot"

@@ -38,4 +38,4 @@ No use cases require this use case to be completed.
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Download_own_media.png "Use Case Diagram: Download own media"
-[screenshot]:  "Delte Media Screenshot"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_watch_download_Media.PNG "Download Media Screenshot"
