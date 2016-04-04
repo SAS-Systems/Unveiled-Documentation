@@ -4,7 +4,9 @@
 Register for a new account on our hompage.
 
 ### 1.1 Brief Description
-The user has to send an registration request to the server administrator to be able to use our software. Therefore he can visit our homepage and register for a new account. He has to fill in his username, email adresse and a password. The administrator can then approve his request.
+The user has to send an registration request to the server administrator to be able to use our software. Therefore he can visit our homepage and register for a new account. He has to fill in his username, email addresse and a password. The administrator can then approve his request.
+
+The email addresse must be verified by the user. Therefore he gets an email sent, which contains a verification link.
 
 ### 1.2 Screenshot Mockup
 ![][screenshot]
