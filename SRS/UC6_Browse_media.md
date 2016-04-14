@@ -6,6 +6,9 @@ Browse own media.
 ### 1.1 Brief Description
 With our web interface a logged-in user is able to browse through his/her uploaded content. He can see a preview of pictures and videos.
 
+This use case was estimated with 62 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -39,3 +42,4 @@ The following use cases require this use case to be completed:
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Browse_media.png "Use Case Diagram: Register"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/browse_media.PNG "Screenshot media browser"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_browse_media.PNG "FP calculation"

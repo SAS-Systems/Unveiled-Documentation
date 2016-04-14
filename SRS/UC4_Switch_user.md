@@ -6,6 +6,9 @@ Switch user in Android App.
 ### 1.1 Brief Description
 In the settings screen the user is able to type in login information for the specified server. This login information can be changed every time.
 
+This use case was estimated with 51 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot1]
 ![][screenshot2]
@@ -49,3 +52,4 @@ The following use cases require this use case to be completed:
 [screenshot1]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_screen_overview.PNG "Settingsscreen overview"
 [screenshot2]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_server_connection.PNG "server connection settings"
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/switch_user.png "feature description in gherkin"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_switch_user.PNG "FP calculation"

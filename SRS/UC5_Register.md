@@ -8,6 +8,9 @@ The user has to send an registration request to the server administrator to be a
 
 The email addresse must be verified by the user. Therefore he gets an email sent, which contains a verification link.
 
+This use case was estimated with 51 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -42,3 +45,4 @@ The following use cases require this use case to be completed:
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Register.png "Use Case Diagram: Register"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/register.png "Register formular screenshot"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_register.PNG "FP calculation"

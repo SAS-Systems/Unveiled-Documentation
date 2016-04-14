@@ -7,6 +7,9 @@ Manage users on website.
 On the website the administrator of the Unveiled server is able to manage all registered users. This includes chanching 
 permissions of specific users or ban them from the server.
 
+This use case was estimated with 48 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -37,3 +40,4 @@ No use cases require this use case to be completed.
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Manage_users.png "Use Case Diagram: Manage users"
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/manage_users.PNG "Manage users screenshot"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_manage_users.PNG "FP calculation"

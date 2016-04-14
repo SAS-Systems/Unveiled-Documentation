@@ -47,4 +47,4 @@ N/A
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/maintain_profile.PNG "Settings-Screen Mockup"
 
-[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_maintain_profile.PNG "FP calculation"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_maintain_user_profile.PNG "FP calculation"
