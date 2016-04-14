@@ -6,6 +6,9 @@ View own media.
 ### 1.1 Brief Description
 The logged-in user is able to search his uploaded media files in the web interface. Therefore he is using the media browser described in [Use Case: Browse media](). When he selects one media file, a new screen is opened. This screen shows the picture or video. It is directly streamed from the server.
 
+This use case was estimated with 49 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -39,3 +42,4 @@ No use cases require this use case to be completed.
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_View_own_media.png "Use Case Diagram: View own media"
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_watch_download_Media.PNG "Watch Media Screenshot"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_view_own_media.PNG "FP calculation"

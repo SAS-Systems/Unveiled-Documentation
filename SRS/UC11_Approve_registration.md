@@ -6,6 +6,9 @@ Approve registration.
 ### 1.1 Brief Description
 The administrator of the web site must approve new user registrations. In a list all not approved users are shown. The administrator is now able to approve the new registrations.
 
+This use case was estimated with 45 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -36,3 +39,4 @@ No use cases require this use case to be completed.
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Approve_registration.png "Use Case Diagram: Approve Registration"
 [screenshot]:  "Approve registration Screenshot"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_approve_registration.PNG "FP calculation"

@@ -6,6 +6,9 @@ Upload File.
 ### 1.1 Brief Description
 When the user is on the main screen of the Unveiled Android Application and he presses the button "Upload File", he can select a file from his local device and upload it to the Unveiled server. The metadata of the file is also stored on the server.
 
+This use case was estimated with 85 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -38,3 +41,4 @@ No use cases require this use case to be completed.
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Upload_file.png "Use Case Diagram: Upload file"
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Upload%20File.PNG "Upload file screenshot"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_upload_file.PNG "FP calculation"
