@@ -10,6 +10,9 @@ The user is able to view and change his profile information on our website. The 
 - EMail address
 - Password
 
+This use case was estimated with 65 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 
 ![][screenshot]
@@ -43,3 +46,5 @@ N/A
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Maintain_profile.png "Use Case Diagram: Configure settings"
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/maintain_profile.PNG "Settings-Screen Mockup"
+
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_maintain_profile.PNG "FP calculation"

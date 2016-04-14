@@ -6,6 +6,9 @@ Configure settings in Android App.
 ### 1.1 Brief Description
 The user is able to configure the information how to access the streaming server. Additionally the user has the ability to change general picture and video quality settings.
 
+This use case was estimated with 70 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 ![][screenshot1]
 ![][screenshot2]
@@ -49,5 +52,5 @@ N/A
 [screenshot3]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_video_settings.PNG "video settings"
 [screenshot4]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_picture_upload.PNG "picture upload settings"
 
-
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/settings.png "feature description in gherkin and basic flow"
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_configure_settings.PNG "FP calculation"
