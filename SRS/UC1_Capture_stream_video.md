@@ -6,6 +6,9 @@ Capture and stream video.
 ### 1.1 Brief Description
 The user is able to capture videos through the inbuilt camera of his Android smartphone. He can see the preview, start and stop the stream.
 
+This use case was estimated with 130 FPs. See the below screenshot for details:
+![][fp calculation]
+
 ### 1.2 Screenshot Mockup
 
 ![][screenshot]
@@ -50,3 +53,5 @@ The user should have already opened the Unveiled Android Application on his smar
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Camera.PNG "Camera Mockup"
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/capture_video.png "Feature description in Gherkin"
+
+[fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_capture_and_stream_video.PNG "FP calculation"
