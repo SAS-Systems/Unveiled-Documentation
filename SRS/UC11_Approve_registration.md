@@ -35,4 +35,4 @@ No use cases require this use case to be completed.
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Approve_registration.png "Use Case Diagram: Approve Registration"
-[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_watch_download_Media.PNG "Approve registration Screenshot"
+[screenshot]:  "Approve registration Screenshot"
