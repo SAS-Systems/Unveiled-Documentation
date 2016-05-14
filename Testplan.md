@@ -2,17 +2,24 @@
 
 ## 1. Introduction
 ### 1.1 Purpose
-
+This Master Test Plan describes how the project "Unveiled" will be tested during development and before it is shipped. It should provide a common basis for all team members how testing in this project is organizied and executed. This document gathers all information necessary to plan and control the test effort for the project "Unveiled".
 
 ### 1.2 Scope
+This document addresses the following types and levels of testing:
 
+- Unit Tests
+- Functional Tests
+- User Interface and Usability Tests
+- Load Tests (*really??*)
+
+There is no need to test the webinterface with unit or functional tests, because it does not contain any testable logic. In addition it will also not be covered by Unit Tests, because the time scale of this project is to short to allow a high effort in testing it. It is more important that the other components of the "Unveiled" application will be covered by tests. See section 3 for the targeted test items.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
 
 - **UC** Use Case
 - **SAD** Software Architecture Document
-
+- **OUCD** Overall Use Case Diagram
 
 ### 1.4 References
 |			Title									|	Date		|
@@ -30,8 +37,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [Deployment Diagram][deployment diagram] | 28.11.2015 |
 
 ### 1.5 Overview
-The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and
-the technical realisation of this project.
+The following chapters will describe which parts of the "Unveiled" application will be covered by tests, what the common test approach is, which tools should be used and how the test goals are defined.
 
 ## 2. Evaluation Mission and Test Motivation
 
