@@ -10,7 +10,7 @@ This document addresses the following types and levels of testing:
 - Unit Tests
 - Functional Tests
 - User Interface and Usability Tests
-- Load Tests (*really??*)
+- Load Tests (**really??**)
 
 There is no need to test the webinterface with unit or functional tests, because it does not contain any testable logic. In addition it will also not be covered by Unit Tests, because the time scale of this project is to short to allow a high effort in testing it. It is more important that the other components of the "Unveiled" application will be covered by tests. See section 3 for the targeted test items.
 
@@ -42,11 +42,52 @@ The following chapters will describe which parts of the "Unveiled" application w
 ## 2. Evaluation Mission and Test Motivation
 
 ## 3. Target Test Items
+The following list contains those test items that have been identified as targets for testing.
+
+- **Unveiled Android Application**: Android Application running on Nexus 6 virtual device, Android **version needed**, ...
+- **imflux**: The streaming library is tested with Java 7 (openjdk7, oraclejdk7), Maven model version 4.0.0 and following dependencies: netty-all 4.0.36, junit 4.12, slf4j-api 1.7.12 and log4j-slf4j-impl 2.4.1.
+- **Unveiled-Server Java-Stack**: The Java-Stack of the Unveiled Backend is also tested with Java 7, Maven model version 4.0.0 and following dependencies: imflux 0.1.0, javax.servlet-api 3.1.0, javax.ejb-api 3.2, junit 4.12 and mysql-connector-java 5.1.38.
+- **Unveiled-Server PHP-Stack**: The PHP-Stack of the Unveiled Backend is tested with PHP 5.6.5, Composer 1.2 and Postman API calls.
 
 ## 4. Test Approach
 ### 4.1 Function Testing
+| Object                  | Description |
+| ----------------------- | ----------- |
+| Technique Objective:    | Setting up and managing RTP, RTCP and RTSP session with the streaming library _imflux_. |
+| Technique:              | |
+| Oracles:                | |
+| Required Tools:         | |
+| Success Criteria:       | |
+| Special Considerations: | |
+
+| Object                  | Description |
+| ----------------------- | ----------- |
+| Technique Objective:    | Test all API functionality of the PHP-Stack.|
+| Technique:              | |
+| Oracles:                | |
+| Required Tools:         | |
+| Success Criteria:       | |
+| Special Considerations: | |
+
 ### 4.2 User Interface Testing
-### 4.3 Load Testing *??*
+| Object                  | Description |
+| ----------------------- | ----------- |
+| Technique Objective:    | |
+| Technique:              | |
+| Oracles:                | |
+| Required Tools:         | |
+| Success Criteria:       | |
+| Special Considerations: | |
+
+### 4.3 Load Testing **??**
+| Object                  | Description |
+| ----------------------- | ----------- |
+| Technique Objective:    | |
+| Technique:              | |
+| Oracles:                | |
+| Required Tools:         | |
+| Success Criteria:       | |
+| Special Considerations: | |
 
 ## 5. Entry and Exit criteria
 ### 5.1 Test Plan
