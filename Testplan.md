@@ -1,4 +1,4 @@
-# Unveiled - Master Test planet
+# Unveiled - Master Test Plan
 
 ## 1. Introduction
 ### 1.1 Purpose
@@ -92,7 +92,10 @@ The following list contains those test items that have been identified as target
 ## 5. Entry and Exit criteria
 ### 5.1 Test Plan
 #### 5.1.1 Test Plan Entry Criteria
+This Test Plan's execution can begin once the build environment was set up, the development has started and all Use Cases were defined properly.
+
 #### 5.1.2 Test Plan Exit Criteria
+This Test Plan is not applicable any more once the development of the "Unveiled" application has stopped, the project has finished or it is replaced by another Test Plan.
 
 ### 5.2 Test Cycles
 #### 5.2.1 Test Cycle Abnormal Termination
@@ -107,13 +110,65 @@ The following list contains those test items that have been identified as target
 
 ## 8. Environmental Needs
 Sonar, CI, etc
+
+
 ### 8.1 Base System Hardware
+The following table sets forth the system resources for the test effort presented in this _Test Plan_.
+
+| Resource | Quantity | Name and Type |
+| -------- |:--------:| ------------- |
+| Database Server<br/> - Network or Subnet<br/> - Server Name<br/> - Database Name | 1 | mySQL database for testing<br/>sas.systemgrid.de<br/>Server01<br/>Unveiled |
+| Client Test PCs<br/> - installed Software:<br/><p/> | 3 | <br/>Java JDK 7/8, Tomcat7 with openEJB, PHP 5, Maven, Git, appropriate IDE |
+| Test Repository<br/> - Network or Subnet<br/> - Server Name | 1 | Server for Testing<br/>sas.systemgrid.de/unveiled/php/<br/>Server01|
+| Test Server Environment | 3 | TravisCI container-based test environments configured for the corresponding tests. |
+
 ### 8.2 Base Software Elements in the Test Environmental
+The following base software elements are required in the test environment for this _Test Plan_.
+
+| Software Element Name | Version | Type and Other Notes |
+| --------------------- |:-------:| -------------------- |
+| Ubuntu                | 14.04   | Operating System |
+| Apache Maven          |         | Dependencies Management and Build Tool |
+| JRE                   | 1.7._x_ | Runtime |
+| PHP                   |         | Runtime |
+| Windows               | 7,8,10  | Operating System |
+| Google Chrome         |         | Internet Browser |
+| Mozilla Firefox       |         | Internet Browser |
+| Android SDK           |         | SDK, Runtime, Virtual Device |
+
 ### 8.3 Productivity and Support tools
+The following tools will be employed to support the test process for this _Test Plan_.
+
+| Tool Category or Type | Tool Brand Name | Vendor or In-house | Version |
+| --------------------- | --------------- | ------------------ |:-------:|
+| Test Coverage Monitor | Coveralls.io    | Lemur Heavy Industries ||
+| Code Coverage         | JaCoCo          | EclEmma            | 0.7.6   |
+| Code Climate, Metrics | Sonarqube       | SonarSource S.A    | 4.5.7   |
+| UI Test tool          | Cucumber for Android | Cucumber Limited ||
+
 ### 8.4 Test Environment Configurations
+The following Test Environment Configurations needs to be provided and supported for this project.
+
+| Configuration Name | Desription | Implemented in Physical Configuration |
+| ------------------ | ---------- | ------------------------------------- |
+| Average user configuration | Number of users who are accessing the application at the same time | 100 Users |
+| Network installation and bandwith | Speed and power of the internet connection provided by the server host. | 50 Mbit/s Down<br/>10 Mbit/s Up |
+| Minimal configuration supported | Performance of the application server and database server. | Application and Database Server on same maschine:<br/>CPU: Dualcore 2.5GHz<br/>RAM: 8GB<br/>HDD: 100GB<br/>OS: Ubuntu 14.04 |
 
 ## 9. responsibilities, Staffing and Training Needs
 ### 9.1 People and Roles
+This table shows the staffing assumptions for the test effort.
+
+| Role | Minimum Resources | Specific Responsibilites or Comments |
+| ---- | ----------------- | ------------------------------------ |
+| Test Manager | Sebastian Schmidl (1) | Provides management oversight. Responsibilities include:<br/>- planning and logistics<br/>- agree mission<br/>- identify motivators<br/>- acquire appropriate resources<br/>- present management reporting<br/>- advocate the interests of test<br/>- evaluate effectiveness of test effort |
+| Test Analyst | Fabian Schäfer (1) | Identifies and defines the specific tests to be conducted. Responsibilities include:<br/>- identify test ideas<br/>- define test details<br/>- determine test results<br/>- document change requests<br/>- evaluate product quality |
+| Test Designer | Sebastian Adams (1)| Defines the technical approach to the implementation of the test effort. Responsibilities include:<br/>- define test approach<br/>- define test automation architecture<br/>- verify test techniques<br/>- define testability elements<br/>- structure test implementation |
+| Tester | all team members (3) | Implements and executes the tests. Responsibilities include:<br/>-	implement tests and test suites<br/>-	execute test suites<br/>-	log results<br/>-	analyze and recover from test failures<br/>-	document incidents |
+| Test System Administrator | Sebastian Schmidl (1) | Ensures test environment and assets are managed and maintained. Responsibilities include:<br/>-	administer test management system<br/>-	install and support access to, and recovery of, test environment configurations and test labs |
+| Database Administrator, Database Manager | Sebastian Adams(1) | Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: <br/>- support the administration of test data and test beds (database). |
+| Implementer | Sebastian Schmidl, Sebastian Adams (2) | Implements and unit tests the test classes and test packages. Responsibilities include:<br/>-	creates the test components required to support testability requirements as defined by the designer |
+
 ### 9.2 Staffing and Training Needs
 (n/a)
 
