@@ -9,8 +9,8 @@ This document addresses the following types and levels of testing:
 
 - Unit Tests
 - Functional Tests
-- User Interface and Usability Tests
-- Load Tests (**really??**)
+- Performance Tests
+- Installation Tests
 
 There is no need to test the webinterface with unit or functional tests, because it does not contain any testable logic. In addition it will also not be covered by Unit Tests, because the time scale of this project is to short to allow a high effort in testing it. It is more important that the other components of the "Unveiled" application will be covered by tests. See section 3 for the targeted test items.
 
@@ -44,75 +44,135 @@ The following chapters will describe which parts of the "Unveiled" application w
 ## 3. Target Test Items
 The following list contains those test items that have been identified as targets for testing.
 
-- **Unveiled Android Application**: Android Application running on Nexus 6 virtual device, Android **version needed**, ...
+- **Unveiled Android Application**: Android Application running on Nexus 6 virtual device, Android 5 Lollipop, Android SDK 18, libstreaming 3.0
 - **imflux**: The streaming library is tested with Java 7 (openjdk7, oraclejdk7), Maven model version 4.0.0 and following dependencies: netty-all 4.0.36, junit 4.12, slf4j-api 1.7.12 and log4j-slf4j-impl 2.4.1.
 - **Unveiled-Server Java-Stack**: The Java-Stack of the Unveiled Backend is also tested with Java 7, Maven model version 4.0.0 and following dependencies: imflux 0.1.0, javax.servlet-api 3.1.0, javax.ejb-api 3.2, junit 4.12 and mysql-connector-java 5.1.38.
 - **Unveiled-Server PHP-Stack**: The PHP-Stack of the Unveiled Backend is tested with PHP 5.6.5, Composer 1.2 and Postman API calls.
 
-## 4. Test Approach
-### 4.1 Function Testing
+## 4. Outline of Planned Tests
+(n/a)
+
+## 5. Test Approach
+### 5.1 Initial Test-Idea Catalogs and Other References
+(n/a)
+
+### 5.2 Testing Techniques and Types
+#### 5.2.1 Data and Database Integrity Testing
+(n/a)
+
+#### 5.2.2 Function Testing
 | Object                  | Description |
 | ----------------------- | ----------- |
 | Technique Objective:    | Setting up and managing RTP, RTCP and RTSP session with the streaming library _imflux_. |
-| Technique:              | |
-| Oracles:                | |
-| Required Tools:         | |
-| Success Criteria:       | |
-| Special Considerations: | |
+| Technique:              | - (automated test) |
+| Oracles:                | - |
+| Required Tools:         | The technique requires the following tools:<br/>- Maven<br/>- JUnit<br/>- TravisCI |
+| Success Criteria:       | The technique supports the testing of:<br/>- Set up RTP/RTCP session<br/>- Set up RTSP session<br/>- automated RTCP handling<br/>- transmitting data via RTP/RTCP<br/>- sending messages via RTSP |
+| Special Considerations: | - |
 
 | Object                  | Description |
 | ----------------------- | ----------- |
-| Technique Objective:    | Test all API functionality of the PHP-Stack.|
-| Technique:              | |
-| Oracles:                | |
-| Required Tools:         | |
-| Success Criteria:       | |
-| Special Considerations: | |
+| Technique Objective:    | Test all API functionality of the PHP-Stack. |
+| Technique:              | Run predefined Postman Collection on the to be tested API. If all calls succeed the test was successful. |
+| Oracles:                | - |
+| Required Tools:         | The technique requires the following tools:<br/>- Postman<br/>- Internet Connection |
+| Success Criteria:       | The technique supports the testing of:<br/>- login<br/>- register<br/>- logout<br/>- CRUD user<br/>- CRUD media<br/>- approve registration|
+| Special Considerations: | - |
 
-### 4.2 User Interface Testing
+#### 5.2.3 Business Cycle Testing
+(n/a)
+
+#### 5.2.4 User Interface Testing
+(n/a)
+
+#### 5.2.5 Performance Profiling
 | Object                  | Description |
 | ----------------------- | ----------- |
-| Technique Objective:    | |
-| Technique:              | |
-| Oracles:                | |
-| Required Tools:         | |
-| Success Criteria:       | |
-| Special Considerations: | |
+| Technique Objective:    | Test the streaming capabilities of the Java-Backend-Stack.  |
+| Technique:              | Use a test script to upload large files and measure the time the server needed to process the request. Also consider to run these test scripts from different networks, locations and internet connections. There should **never** be a network connection timeout. As a second step run this test script concurrently to test the server behaviour on heavy load. |
+| Oracles:                | - |
+| Required Tools:         | The technique requires the following tools:<br/>- Server Access<br/>- Internet Connection<br/>- A test script for streaming large files.|
+| Success Criteria:       | The technique supports the testing of:<br/>- a single large upload stream<br/>- multiple upload stream processed concurrently |
+| Special Considerations: | - use multiple physical clients, each running tests scripts, to place a load on the server<br/>- consider that your Internet bandwith must be good enaugh for such test |
 
-### 4.3 Load Testing **??**
+#### 5.2.6 Load Testing
+(n/a)
+
+#### 5.2.7 Stress Testing
+(n/a)
+
+#### 5.2.8 Volume Testing
+(n/a)
+
+#### 5.2.9 Security and Access Control Testing
+(n/a)
+
+#### 5.2.10 Failover and Recovery Testing
+(n/a)
+
+#### 5.2.11 Configuration Testing
+(n/a)
+
+#### 5.2.12 Installation Testing
 | Object                  | Description |
 | ----------------------- | ----------- |
-| Technique Objective:    | |
-| Technique:              | |
-| Oracles:                | |
-| Required Tools:         | |
-| Success Criteria:       | |
-| Special Considerations: | |
+| Technique Objective:    | Test installation of the _Unveiled_ Android Application on different devices. |
+| Technique:              | Install Android Application on an Android Device. Afterwards test application by opening it and going through all use-cases. Consider following:<br/>- use devices with different Android versions and different manufacturers<br/>- do a new install (the App was never installed before on this device)<br/>- do a reinstall (the same or older version was installed before) |
+| Oracles:                | - |
+| Required Tools:         | - Android devices from different manufacturers and with different Android versions |
+| Success Criteria:       | - App should install and afterwards work correctly.|
+| Special Considerations: | - |
 
-## 5. Entry and Exit criteria
-### 5.1 Test Plan
-#### 5.1.1 Test Plan Entry Criteria
+## 6. Entry and Exit criteria
+### 6.1 Test Plan
+#### 6.1.1 Test Plan Entry Criteria
 This Test Plan's execution can begin once the build environment was set up, the development has started and all Use Cases were defined properly.
 
-#### 5.1.2 Test Plan Exit Criteria
+#### 6.1.2 Test Plan Exit Criteria
 This Test Plan is not applicable any more once the development of the "Unveiled" application has stopped, the project has finished or it is replaced by another Test Plan.
 
-### 5.2 Test Cycles
-#### 5.2.1 Test Cycle Abnormal Termination
+### 6.2 Test Cycles
+(n/a)
 
-## 6. Deliverables
-### 6.1 Test Evaluation Summaries
-### 6.2 Reporting on Test Coverage
-### 6.3 Incident Logs and Change Requests
-### 6.4 Additional automated functional Test Scripts
+## 7. Deliverables
+### 7.1 Test Evaluation Summaries
+The test avulation summaries are generated by our automated test tools and will have the following results:
 
-## 7. Testing Workflow
+- **passed** All tests have passed and were successful.
+- **failed** At least one test was not successful.
+- **error** There was an error during the execution of the tests.
 
-## 8. Environmental Needs
-Sonar, CI, etc
+Following pictures show some example test reports:
 
+![junit screenshot]
 
-### 8.1 Base System Hardware
+![travis screenshot]
+
+### 7.2 Reporting on Test Coverage
+Test coverage is reported to _coveralls.io_:
+
+- [Test coverage report _imflux_][coveralls imflux]
+- [Test coverage report _Unveiled-Server_][coveralls server]
+
+and _sonarqube_:
+
+- [Code Measures _imflux_][sonarqube imflux]
+- [Code Measures _Unveiled-Server_][sonarqube server]
+
+### 7.3 Perceived Quality Reports
+(n/a)
+### 7.4 Incident Logs and Change Requests
+** !! ------------------------------------------------- tbd --------------------------------------------------------- !!**
+
+### 7.5 Smoke Test Suite and Supporting Test Scripts
+(n/a)
+### 7.4 Additional Work Products
+
+## 8. Testing Workflow
+We mostly use JUnit as testing framework for our Java-Backend-Stack. All Java application parts are managed with maven and therefore we can run unit tests as well as funtional tests within our IDE easily through one maven command. Our build process supports testing as well. Every push to the master branch and every pull request of our application's Github repositories trigger a new build process. We use TravisCI for contiunouse integration. Travis builds the application and will afterwards run the tests. All test results as well as the code coverage is then published to _coveralls.io_ and _sonarqube_. If the build and all tests were successful the Unveiled-Server application is deployed on the server.
+
+## 9. Environmental Needs
+### 9.1 Base System Hardware
 The following table sets forth the system resources for the test effort presented in this _Test Plan_.
 
 | Resource | Quantity | Name and Type |
@@ -122,7 +182,7 @@ The following table sets forth the system resources for the test effort presente
 | Test Repository<br/> - Network or Subnet<br/> - Server Name | 1 | Server for Testing<br/>sas.systemgrid.de/unveiled/php/<br/>Server01|
 | Test Server Environment | 3 | TravisCI container-based test environments configured for the corresponding tests. |
 
-### 8.2 Base Software Elements in the Test Environmental
+### 9.2 Base Software Elements in the Test Environment
 The following base software elements are required in the test environment for this _Test Plan_.
 
 | Software Element Name | Version | Type and Other Notes |
@@ -136,7 +196,7 @@ The following base software elements are required in the test environment for th
 | Mozilla Firefox       |         | Internet Browser |
 | Android SDK           |         | SDK, Runtime, Virtual Device |
 
-### 8.3 Productivity and Support tools
+### 9.3 Productivity and Support Tools
 The following tools will be employed to support the test process for this _Test Plan_.
 
 | Tool Category or Type | Tool Brand Name | Vendor or In-house | Version |
@@ -146,7 +206,7 @@ The following tools will be employed to support the test process for this _Test 
 | Code Climate, Metrics | Sonarqube       | SonarSource S.A    | 4.5.7   |
 | UI Test tool          | Cucumber for Android | Cucumber Limited ||
 
-### 8.4 Test Environment Configurations
+### 9.4 Test Environment Configurations
 The following Test Environment Configurations needs to be provided and supported for this project.
 
 | Configuration Name | Desription | Implemented in Physical Configuration |
@@ -155,8 +215,8 @@ The following Test Environment Configurations needs to be provided and supported
 | Network installation and bandwith | Speed and power of the internet connection provided by the server host. | 50 Mbit/s Down<br/>10 Mbit/s Up |
 | Minimal configuration supported | Performance of the application server and database server. | Application and Database Server on same maschine:<br/>CPU: Dualcore 2.5GHz<br/>RAM: 8GB<br/>HDD: 100GB<br/>OS: Ubuntu 14.04 |
 
-## 9. responsibilities, Staffing and Training Needs
-### 9.1 People and Roles
+## 10. Responsibilities, Staffing and Training Needs
+### 10.1 People and Roles
 This table shows the staffing assumptions for the test effort.
 
 | Role | Minimum Resources | Specific Responsibilites or Comments |
@@ -169,11 +229,20 @@ This table shows the staffing assumptions for the test effort.
 | Database Administrator, Database Manager | Sebastian Adams(1) | Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: <br/>- support the administration of test data and test beds (database). |
 | Implementer | Sebastian Schmidl, Sebastian Adams (2) | Implements and unit tests the test classes and test packages. Responsibilities include:<br/>-	creates the test components required to support testability requirements as defined by the designer |
 
-### 9.2 Staffing and Training Needs
+### 10.2 Staffing and Training Needs
 (n/a)
 
-## 10. Risks, Dependencies, Assumptions and Constraints
-milestones: 20% coverage by date....
+## 11. Iteration milestones
+Milestones to be achieved till 30.05.2016
+- at least 50% test coverage for the streaming library _imflux_, because it could be reused in other projects
+- at least 20% test coverage for _Unveiled_ Java-Backend-Stack
+- successfully completed installation tests for at least 3 different Android device types
+
+## 12. Risks, Dependencies, Assumptions and Constraints
+(n/a)
+
+## 13. Management Process and Procedures
+(n/a)
 
 
 
@@ -192,3 +261,9 @@ milestones: 20% coverage by date....
 [class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
+[coveralls imflux]: https://coveralls.io/github/SAS-Systems/imflux "Link to test coverage report imflux"
+[coveralls server]: https://coveralls.io/github/SAS-Systems/Unveiled-Server "Link to test coverage report Unveiled-Server"
+[sonarqube imflux]: http://sonarqube.it.dh-karlsruhe.de/overview?id=sas_systems%3Aimflux "Link to code measures of imflux"
+[sonarqube server]: http://sonarqube.it.dh-karlsruhe.de/overview?id=sas_systems%3AUnveiled-Server "Link to code measures of Unveiled-Server"
+[junit screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/Unittest/2012-12-02_imflux_JUnit_log.png "Test report example"
+[travis screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/Unittest/2012-12-02_imflux_travis_log.png "TravisCI test report example"
