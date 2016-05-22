@@ -187,9 +187,9 @@ The following table sets forth the system resources for the test effort presente
 
 | Resource | Quantity | Name and Type |
 | -------- |:--------:| ------------- |
-| Database Server<br/> - Network or Subnet<br/> - Server Name<br/> - Database Name | 1 | mySQL database for testing<br/>sas.systemgrid.de<br/>Server01<br/>Unveiled |
+| Database Server<br/> - Network or Subnet<br/> - Server Name<br/> - Database Name | 1 | mySQL database for testing<br/>&nbsp;&nbsp;sas.systemgrid.de<br/>&nbsp;&nbsp;Server01<br/>&nbsp;&nbsp;unveiled |
 | Client Test PCs<br/> - installed Software:<br/> | 3 | Java JDK 7/8, Tomcat7 with<br/> openEJB, PHP 5, Maven, Git,<br/> appropriate IDE |
-| Test Repository<br/> - Network or Subnet<br/> - Server Name | 1 | Server for Testing<br/>sas.systemgrid.de/unveiled/php/<br/>Server01|
+| Test Repository<br/> - Network or Subnet<br/> - Server Name | 1 | Server for Testing<br/>&nbsp;&nbsp;sas.systemgrid.de/unveiled/php/<br/>&nbsp;&nbsp;Server01|
 | Test Server Environment | 3 | TravisCI container-based test environments<br/> configured for the corresponding tests. |
 
 ### 9.2 Base Software Elements in the Test Environment
