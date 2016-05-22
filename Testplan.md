@@ -40,6 +40,14 @@ In this section definitions and explanations of acronyms and abbreviations are l
 The following chapters will describe which parts of the "Unveiled" application will be covered by tests, what the common test approach is, which tools should be used and how the test goals are defined.
 
 ## 2. Evaluation Mission and Test Motivation
+### 2.1 Background
+Testing supports all project members with feedback to their work. It ensures that use cases and functionalities are implemented in a correct manner and shows if changes infected the behaviour of the application in a bad way.
+
+### 2.2 Evaluation Mission
+The overall goal is to find broken functionality and logical bugs, so that they can be fixed early enough.
+
+## 2.3 Test Motivators
+Our test motivation is to reduce quality and technical risks. This supports us successfully realise our use cases.
 
 ## 3. Target Test Items
 The following list contains those test items that have been identified as targets for testing.
@@ -162,14 +170,16 @@ and _sonarqube_:
 ### 7.3 Perceived Quality Reports
 (n/a)
 ### 7.4 Incident Logs and Change Requests
-** !! ------------------------------------------------- tbd --------------------------------------------------------- !!**
+**tbd**
 
 ### 7.5 Smoke Test Suite and Supporting Test Scripts
 (n/a)
+
 ### 7.4 Additional Work Products
+**tbd**
 
 ## 8. Testing Workflow
-We mostly use JUnit as testing framework for our Java-Backend-Stack. All Java application parts are managed with maven and therefore we can run unit tests as well as funtional tests within our IDE easily through one maven command. Our build process supports testing as well. Every push to the master branch and every pull request of our application's Github repositories trigger a new build process. We use TravisCI for contiunouse integration. Travis builds the application and will afterwards run the tests. All test results as well as the code coverage is then published to _coveralls.io_ and _sonarqube_. If the build and all tests were successful the Unveiled-Server application is deployed on the server.
+We mostly use JUnit as testing framework for our Java-Backend-Stack. All Java application parts are managed with maven and therefore we can run unit tests as well as funtional tests within our IDE easily through one maven command. Our build process supports testing as well. Every push to the master branch and every pull request of our application's Github repositories trigger a new build process. We use TravisCI for contiunouse integration. Travis builds the application and will afterwards run the tests. All test results as well as the code coverage is then published to _coveralls.io_ and _sonarqube_. If the build and all tests were successful the Unveiled-Server application is deployed on the server. If a build failed the originator of this build is notified via email to ensure that the issues are addressed immediately.
 
 ## 9. Environmental Needs
 ### 9.1 Base System Hardware
