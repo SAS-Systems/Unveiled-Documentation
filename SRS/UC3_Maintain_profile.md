@@ -8,7 +8,6 @@ The user is able to view and change his profile information on our website. The 
 
 - User name
 - EMail address
-- Password
 
 This use case was estimated with 65 FPs. See the below screenshot for details:
 ![][fp calculation]

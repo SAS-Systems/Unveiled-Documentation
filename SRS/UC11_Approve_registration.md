@@ -4,7 +4,7 @@
 Approve registration.
 
 ### 1.1 Brief Description
-The administrator of the web site must approve new user registrations. In a list all not approved users are shown. The administrator is now able to approve the new registrations.
+The user must approve his registration. Therefore he has to verify his e-mail address by following a link sent to his e-mail address. After clicking on this link the e-mail is verified by the backend and the user sees a succ message.
 
 This use case was estimated with 45 FPs. See the below screenshot for details:
 ![][fp calculation]
@@ -24,11 +24,9 @@ This use case was estimated with 45 FPs. See the below screenshot for details:
 (n/a)
 
 ## 4. Preconditions
-### 4.1 User has to be administrator
-Only users with the administrator-permission are allowed to change user permission and approve new registered users.
+### 4.1 User has to specify an e-mail address
+Only users with correct email addresses can approve their account.
 
-### 4.2 Files available
-The user should have already uploaded some files to the server. Otherwise no files are available to deletion.
 
 ## 5. Postconditions
 No use cases require this use case to be completed.
@@ -38,5 +36,5 @@ No use cases require this use case to be completed.
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Approve_registration.png "Use Case Diagram: Approve Registration"
-[screenshot]:  "Approve registration Screenshot"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/approved_registration.PNG "Approve registration Screenshot"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_approve_registration.PNG "FP calculation"

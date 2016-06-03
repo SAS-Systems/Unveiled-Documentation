@@ -4,7 +4,7 @@
 Delete own media.
 
 ### 1.1 Brief Description
-The logged-in user is able to search his uploaded media files in the web interface to select one or multiple files to delete them.
+The logged-in user is able to search his uploaded media files in the web interface to select one files to delete them.
 
 This use case was estimated with 45 FPs. See the below screenshot for details:
 ![][fp calculation]
@@ -41,5 +41,5 @@ No use cases require this use case to be completed.
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Delete_own_media.png "Use Case Diagram: Delete media"
-[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_watch_download_Media.PNG "Delte Media Screenshot"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_media.PNG "Delte Media Screenshot"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_delete_own_media.PNG "FP calculation"

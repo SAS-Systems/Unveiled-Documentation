@@ -24,6 +24,7 @@ In this section definitions and explanations of acronyms and abbreviations are l
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
+| [Software Requirement Specification (SRS)][SRS] | 14.11.2015	|
 | [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
 | [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
 | [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
@@ -32,8 +33,12 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [UC5: Register][uc register] | 28.11.2015 |
 | [UC6: Browse own media][uc browse media] | 28.11.2015 |
 | [UC7: Manage Users][uc manage users] | 19.12.2015 |
+| [UC8: Delete own media][uc delete own media] | 03.06.2016 |
+| [UC9: Download own media][uc download own media] | 03.06.2016 |
+| [UC10: View own media][uc view own media] | 03.06.2016 |
+| [UC11: Approve registration][uc approve registration] | 03.06.2016 |
+| [UC12: Upload file][uc upload file] | 03.06.2016 |
 | [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-| [Software Architecture Document][sad] | 15.11.2015	|
 | [Deployment Diagram][deployment diagram] | 28.11.2015 |
 
 ### 1.5 Overview
@@ -168,9 +173,24 @@ and _sonarqube_:
 - [Code Measures _Unveiled-Server_][sonarqube server]
 
 ### 7.3 Perceived Quality Reports
-(n/a)
+You can find some up to date high level quality metrics on _sonarqube_ as well. Please consult these links:
+
+- [Code Measures _imflux_][sonarqube imflux]
+- [Code Measures _Unveiled-Server_][sonarqube server]
+
+We are also using low level metrics to ensure a good quality of our code. The following screenshot shows you a not up-to-date report from the tool _Metrics 1.3.6_:
+
+![metrics screenshot 1][]
+
+![metrics screenshot 2][]
+
+
 ### 7.4 Incident Logs and Change Requests
-**tbd**
+Our build process automatically triggers a ticket creation on Jira if a build fails. Therefore all team members are notified and are able to follow the link to the failed build to check the failing reason. The following picture shows you how an automatically created Jira ticket looks like.
+
+![jira ticket][]
+
+Users and customer can log their incidents and change wishes as issues on Github. From these issues new Jira tickets will be created to add a new backlog item to the team members task list.
 
 ### 7.5 Smoke Test Suite and Supporting Test Scripts
 (n/a)
@@ -179,7 +199,7 @@ and _sonarqube_:
 **tbd**
 
 ## 8. Testing Workflow
-We mostly use JUnit as testing framework for our Java-Backend-Stack. All Java application parts are managed with maven and therefore we can run unit tests as well as funtional tests within our IDE easily through one maven command. Our build process supports testing as well. Every push to the master branch and every pull request of our application's Github repositories trigger a new build process. We use TravisCI for contiunouse integration. Travis builds the application and will afterwards run the tests. All test results as well as the code coverage is then published to _coveralls.io_ and _sonarqube_. If the build and all tests were successful the Unveiled-Server application is deployed on the server. If a build failed the originator of this build is notified via email to ensure that the issues are addressed immediately.
+We mostly use JUnit as testing framework for our Java-Backend-Stack. All Java application parts are managed with maven and therefore we can run unit tests as well as funtional tests within our IDE easily through one maven command. Our build process supports testing as well. Every push to the master branch and every pull request of our application's Github repositories trigger a new build process. We use TravisCI for contiunouse integration. Travis builds the application and will afterwards run the tests. All test results as well as the code coverage are then published to _coveralls.io_ and _sonarqube_. If the build and all tests were successful the Unveiled-Server application is deployed on the server. If a build failed the originator of this build is notified via email to ensure that the issues are addressed immediately and a new Jira ticket is created.
 
 ## 9. Environmental Needs
 ### 9.1 Base System Hardware
@@ -260,8 +280,10 @@ Milestones to be achieved till 30.05.2016
 
 
 <!-- Link definitions: -->
-[Overall Use Case Diagram (OUCD)]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
-[Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
+<!-- Link definitions: -->
+[SRS]: http://unveiled.systemgrid.de/wp/docu/docusrs/ "SRS"
+[SAD]: http://unveiled.systemgrid.de/wp/docu/sad/ "SAD"
+[Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [uc capture video]: http://unveiled.systemgrid.de/wp/docu/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/docu/srs_uc2/ "Use Case 2: Configure settings"
 [uc maintain profile]: http://unveiled.systemgrid.de/wp/docu/srs_uc3/ "Use Case 3: Maintain profile"
@@ -269,8 +291,11 @@ Milestones to be achieved till 30.05.2016
 [uc register]: http://unveiled.systemgrid.de/wp/docu/srs_uc5/ "Use Case 5: Register"
 [uc browse media]: http://unveiled.systemgrid.de/wp/docu/srs_uc6/ "Use Case 6: Browse own media"
 [uc manage users]: http://unveiled.systemgrid.de/wp/docu/srs_uc7/ "Use Case 7: Manage users"
-[class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
-[sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
+[uc delete own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc8/ "Use Case 8: Delete own media"
+[uc download own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc9/ "Use Case 9: Download own media"
+[uc view own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc10/ "Use Case 10: View own media"
+[uc approve registration]: http://unveiled.systemgrid.de/wp/docu/srs_uc11/ "Use Case 11: Approve registration"
+[uc upload file]: http://unveiled.systemgrid.de/wp/docu/srs_uc12/ "Use Case 12: Upload file"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
 [coveralls imflux]: https://coveralls.io/github/SAS-Systems/imflux "Link to test coverage report imflux"
 [coveralls server]: https://coveralls.io/github/SAS-Systems/Unveiled-Server "Link to test coverage report Unveiled-Server"
@@ -278,3 +303,6 @@ Milestones to be achieved till 30.05.2016
 [sonarqube server]: http://sonarqube.it.dh-karlsruhe.de/overview?id=sas_systems%3AUnveiled-Server "Link to code measures of Unveiled-Server"
 [junit screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/Unittest/2012-12-02_imflux_JUnit_log.png "Test report example"
 [travis screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/Unittest/2012-12-02_imflux_travis_log.png "TravisCI test report example"
+[metrics screenshot 1]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/HW_metrics/metrics_imflux_before.PNG "Low level metrics imflux"
+[metrics screenshot 2]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/HW_metrics/metrics_Unveiled-Server_after_part2.PNG "Low level metrics Unveiled-Server"
+[jira ticket]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/automatically_generated_jira_ticket.PNG "Automaticall created jira ticket"
