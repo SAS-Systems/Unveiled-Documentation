@@ -1,8 +1,5 @@
 ﻿# Unveiled - Software Requirements Specification
 
-## Table of Contents
-(tbd)
-
 ## 1. Introduction
 ### 1.1 Purpose
 This SRS describes all specifications for "Unveiled". It’s an Android-App enhanced with a small web interface. "Unveiled" allows
@@ -14,8 +11,7 @@ these criteria as well.
 ### 1.2 Scope
 This software specification applies to the whole "Unveiled" application. The application consists of two parts: The first part is an
 Android-App, which allows users to take pictures and videos with their smartphone. It establishes a livestream to a server which
-stores the captured media in a private library. The second part is a website allowing users to browse, download and publish
-their own media.
+stores the captured media in a private library. The second part is a website allowing users to browse, download and manage their own media.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 In this section definitions and explanations of acronyms and abbreviations are listed to help the reader to understand these.
@@ -38,6 +34,11 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [UC5: Register][uc register] | 28.11.2015 |
 | [UC6: Browse own media][uc browse media] | 28.11.2015 |
 | [UC7: Manage Users][uc manage users] | 19.12.2015 |
+| [UC8: Delete own media][uc delete own media] | 03.06.2016 |
+| [UC9: Download own media][uc download own media] | 03.06.2016 |
+| [UC10: View own media][uc view own media] | 03.06.2016 |
+| [UC11: Approve registration][uc approve registration] | 03.06.2016 |
+| [UC12: Upload file][uc upload file] | 03.06.2016 |
 | [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
 | [Software Architecture Document][sad] | 15.11.2015	|
 | [Deployment Diagram][deployment diagram] | 28.11.2015 |
@@ -57,7 +58,7 @@ at risk. Our Application addresses exactly this point.
 > forbids it. - [Edward Snowden]
 
 People using our App can take pictures and videos which are immediately uploaded to our servers. There they are stored in a
-private library only accessible to the owner. Through a web based interface you are able to publish your recorded content.
+private library only accessible to the owner. Through a web based interface you are able to manage your recorded content.
 
 The following picture shows the overall use case diagram of our software:
 ![OUCD][]
@@ -81,15 +82,15 @@ The user is able to film with the smartphone camera. The captured video material
 data. There is a detached [document][uc capture video] describing this use case more precisely.
 
 #### 3.1.5 Upload File
-If the automatically upload of the video or picture failed, the user is able to upload the file manually.
+If the automatic upload of the video or picture failed, the user is able to upload the file manually. This use case is described in [this document][uc upload file].
 
 
 ### 3.2 Functionality - Website
 #### 3.2.1 Register for a new account
-At the home page of the website there is the possibility to register for a new user. A registration has to be approved by an administrator.
+At the home page of the website there is the possibility to register for a new user. A registration is approved by verifying the user e-mail address. For more information please consider [this document][uc approve registration].
 
 #### 3.2.2 Login-Page
-The website contains a login-form for users that have already registered for an account. 
+The website contains a login-form for users that have already registered for an account.
 
 #### 3.2.3 Maintain Profile
 This overview page allows the user to view and maintain his profile. A more detailed description can be found [here][uc switch user].
@@ -98,17 +99,17 @@ This overview page allows the user to view and maintain his profile. A more deta
 At this page all captured and uploaded media of a single user is shown. He can browse the content easily.
 
 #### 3.2.5 Content viewer
-Each uploaded file is shown in the media browser. To see detailed information and perform actions on the file (content) there is another page showing this information. 
+Each uploaded file is shown in the media browser. Detailed information is shown below and in a modal dialog the video can be watched. See [this document][uc view own media] for further information.
 
 #### 3.2.6 Delete files
-The user is able to delete his own media stored on the server.
+The user is able to delete his own media stored on the server. [Use case document][uc delete own media].
 
 #### 3.2.7 Download files
-Captured media can be downloaded only by the owner. Therefore he is able to select specific files in the media browser for download.
+Captured media can be downloaded only by the owner. Therefore he is able to select specific files in the media browser for download. [Use case document][uc download own media].
 
 #### 3.2.8 Approve registration
-At this page the administrator can accept user registration requests.
- 
+Users have to verify their e-mail address to approve their account. [Use case document][uc approve registration].
+
 #### 3.2.9 Manage Users
 The administrator is able to perform several different functions on user data. You can read more about this use case [here][uc manage users].
 
@@ -127,7 +128,7 @@ We expect the user to be a honest person, who just upload media that makes our w
 
 ### 3.4 Reliability
 #### 3.4.1 Server availability
-Our own server should have a 90% up-time to ensure. 
+Our own server should ensure a 90% up-time.
 
 We will also provide an installation-kit so that every institution can host their own streaming server application. In that case the server availability is under the institutions responsibility.
 
@@ -138,7 +139,7 @@ This is also in the hands of the server owners.
 Our streaming server and our AndroidApp should be compliant to [RFC 2326][](RTSP) and [RFC 3550][](RTP) to be easily scalable and to ensure a stable and performant stream (also to other clients and servers if required).
 
 ### 3.5 Performance
-(tbd)
+The streaming of the media files from the Android app to the server must not guarantee real-time data transfer, because the file will not be displayed and watched live. It is just saved on the server side. But the data transfer should not take more time than twice the time of the recording had taken.
 
 ### 3.6 Supportability
 #### 3.6.1 Language support
@@ -147,10 +148,12 @@ We will use the following languages, which will also be well supported in the fu
 - Java EE 7 (Work on Java EE 8 is already in progress)
 - Android 6.0 (Marshmallow)
 - the well-known Internet Standards HTML5, CSS3 and JavaScript
-- tbd
+- PHP version 5
 
 #### 3.6.2 Support for dependencies
 We will build our own RTSP streaming library compliant to [RFC 2326][] and [RFC 3550][] in Java for our backend. Therefore we can ensure that this library is compatible with our streaming application at any time. At client side we will use libstreaming that is under continuing development and hosted by Github. You can find the source code and the description at their [Github-Page][libstreaming].
+
+Our website frontend uses Angular and jQuery for displaying the media browser and managing the HTML DOM-manipulations.
 
 ### 3.7 Design Constraints
 #### 3.7.1 Backend in Java and PHP
@@ -160,23 +163,29 @@ The backend of this software should be written in PHP and Java. The PHP-stack is
 Our Android application should implement the MVC pattern.
 
 ### 3.8 On-line User Documentation and Help System Requirements
-The whole application will be built with an intuitive design, so there shouldn’t be a need for the user to ask us or the program for help. However the website should have an inbuilt online help, which is able to guide the user through certain steps. We also write our own blog, on which users can find information and ask us questions.
+The whole application will be built with an intuitive design, so there shouldn’t be a need for the user to ask us or the program for help. However we will write our own blog, on which users can find information and ask us questions.
 
 ### 3.9 Purchased Components
 (n/a)
 
 ### 3.10 Interfaces
-(tbd)
 #### 3.10.1 User Interfaces
+Please consult the different use case descriptions for screenshots and UI functionality.
+
 #### 3.10.2 Hardware Interfaces
+(n/a)
+
 #### 3.10.3 Software Interfaces
+(n/a)
+
 #### 3.10.4 Communications Interfaces
+(n/a)
 
 ### 3.11 Licensing Requirement
-(tbd)
+Our server side code is subject to the [Apache Licence 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ### 3.12 Legal, Copyright and other Notices
-(tbd)
+(n/a)
 
 ### 3.13 Applicable Standards
 RFCs:
@@ -185,9 +194,7 @@ RFCs:
 - [RFC 2326][] - Real Time Streaming Protocol (RTSP)
 
 ## 4. Supporting Information
-### 4.1 Table of Contents
-(tbd)
-### 4.2 Appendices
+### 4.1 Appendices
 You can find any internal linked sources in the chapter References (go to the top of this document).
 
 
@@ -201,6 +208,11 @@ You can find any internal linked sources in the chapter References (go to the to
 [uc register]: http://unveiled.systemgrid.de/wp/docu/srs_uc5/ "Use Case 5: Register"
 [uc browse media]: http://unveiled.systemgrid.de/wp/docu/srs_uc6/ "Use Case 6: Browse own media"
 [uc manage users]: http://unveiled.systemgrid.de/wp/docu/srs_uc7/ "Use Case 7: Manage users"
+[uc delete own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc8/ "Use Case 8: Delete own media"
+[uc download own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc9/ "Use Case 9: Download own media"
+[uc view own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc10/ "Use Case 10: View own media"
+[uc approve registration]: http://unveiled.systemgrid.de/wp/docu/srs_uc11/ "Use Case 11: Approve registration"
+[uc upload file]: http://unveiled.systemgrid.de/wp/docu/srs_uc12/ "Use Case 12: Upload file"
 [class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
