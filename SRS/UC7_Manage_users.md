@@ -4,8 +4,8 @@
 Manage users on website.
 
 ### 1.1 Brief Description
-On the website the administrator of the Unveiled server is able to manage all registered users. This includes chanching 
-permissions of specific users or ban them from the server.
+On the website the administrator of the Unveiled server is able to manage all registered users. This includes chanching
+permissions of specific users or deactivate them from the server.
 
 This use case was estimated with 48 FPs. See the below screenshot for details:
 ![][fp calculation]
@@ -26,7 +26,7 @@ This use case was estimated with 48 FPs. See the below screenshot for details:
 
 ## 4. Preconditions
 ### 4.1 User has to be administrator
-Only users with the administrator-permission are allowed to change user permission and ban users on the manage_users screen.
+Only users with the administrator-permission are allowed to change user permission and deactivate users on the manage_users screen.
 
 ### 4.2 Logged-in user
 The user should be logged-in as administrator.
