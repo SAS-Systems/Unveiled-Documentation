@@ -38,5 +38,5 @@ No use cases require this use case to be completed.
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Approve_registration.png "Use Case Diagram: Approve Registration"
-[screenshot]:  "Approve registration Screenshot"
+[screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/approved_registration.PNG "Approve registration Screenshot"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_approve_registration.PNG "FP calculation"
