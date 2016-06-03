@@ -1,8 +1,5 @@
 # Unveiled - Software Architecture Document
 
-## Table of Contents
-(tbd)
-
 ## 1. Introduction
 
 ### 1.1 Purpose
@@ -21,13 +18,21 @@ In this section definitions and explanations of acronyms and abbreviations are l
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
 | [Software Requirement Specification (SRS)][SRS] | 14.11.2015	|
-| [Overall Use Case Diagram (OUCD)] | 16.10.2015	|
+| [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
 | [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
 | [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
-| [UC3: Maintain profile][uc maintain profile] | 22.11.2015 |
+| [UC3: Maintain user profile][uc maintain profile] | 22.11.2015 |
 | [UC4: Switch user][uc switch user] | 21.11.2015 |
+| [UC5: Register][uc register] | 28.11.2015 |
+| [UC6: Browse own media][uc browse media] | 28.11.2015 |
+| [UC7: Manage Users][uc manage users] | 19.12.2015 |
+| [UC8: Delete own media][uc delete own media] | 03.06.2016 |
+| [UC9: Download own media][uc download own media] | 03.06.2016 |
+| [UC10: View own media][uc view own media] | 03.06.2016 |
+| [UC11: Approve registration][uc approve registration] | 03.06.2016 |
+| [UC12: Upload file][uc upload file] | 03.06.2016 |
 | [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-| [UML diagrams (Github)][uml diagrams] | 15.11.2015	|
+| [Deployment Diagram][deployment diagram] | 28.11.2015 |
 
 ### 1.5 Overview
 This document is about our overall architectural design ideas. The following chapters explaining them from different views.
@@ -97,10 +102,19 @@ Our MVC architecture is spread over several different devices. Our server includ
 <!-- Link definitions: -->
 [SRS]: http://unveiled.systemgrid.de/wp/docu/docusrs/ "SRS"
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
-[uc capture video]: http://unveiled.systemgrid.de/wp/srs_uc1/ "Use Case 1: Capture and stream video"
-[uc configure settings]: http://unveiled.systemgrid.de/wp/srs_uc2/ "Use Case 2: Configure settings"
-[uc maintain profile]: http://unveiled.systemgrid.de/wp/srs_uc3/ "User Case 3: Maintain profile"
-[uc switch user]: http://unveiled.systemgrid.de/wp/srs_uc4/ "User Case 4: Switch user"
+[uc capture video]: http://unveiled.systemgrid.de/wp/docu/srs_uc1/ "Use Case 1: Capture and stream video"
+[uc configure settings]: http://unveiled.systemgrid.de/wp/docu/srs_uc2/ "Use Case 2: Configure settings"
+[uc maintain profile]: http://unveiled.systemgrid.de/wp/docu/srs_uc3/ "Use Case 3: Maintain profile"
+[uc switch user]: http://unveiled.systemgrid.de/wp/docu/srs_uc4/ "Use Case 4: Switch user"
+[uc register]: http://unveiled.systemgrid.de/wp/docu/srs_uc5/ "Use Case 5: Register"
+[uc browse media]: http://unveiled.systemgrid.de/wp/docu/srs_uc6/ "Use Case 6: Browse own media"
+[uc manage users]: http://unveiled.systemgrid.de/wp/docu/srs_uc7/ "Use Case 7: Manage users"
+[uc delete own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc8/ "Use Case 8: Delete own media"
+[uc download own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc9/ "Use Case 9: Download own media"
+[uc view own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc10/ "Use Case 10: View own media"
+[uc approve registration]: http://unveiled.systemgrid.de/wp/docu/srs_uc11/ "Use Case 11: Approve registration"
+[uc upload file]: http://unveiled.systemgrid.de/wp/docu/srs_uc12/ "Use Case 12: Upload file"
+[class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [uml diagrams]: https://github.com/SAS-Systems/Unveiled-Documentation/tree/master/Bilder/UML%20Class%20diagrams "UML diagrams"
 
