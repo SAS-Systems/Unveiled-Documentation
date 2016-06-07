@@ -296,6 +296,7 @@ Milestones to be achieved till 30.05.2016
 [uc view own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc10/ "Use Case 10: View own media"
 [uc approve registration]: http://unveiled.systemgrid.de/wp/docu/srs_uc11/ "Use Case 11: Approve registration"
 [uc upload file]: http://unveiled.systemgrid.de/wp/docu/srs_uc12/ "Use Case 12: Upload file"
+[class diagram php]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
 [deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
 [coveralls imflux]: https://coveralls.io/github/SAS-Systems/imflux "Link to test coverage report imflux"
 [coveralls server]: https://coveralls.io/github/SAS-Systems/Unveiled-Server "Link to test coverage report Unveiled-Server"
