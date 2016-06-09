@@ -21,11 +21,14 @@ In this section definitions and explanations of acronyms and abbreviations are l
 - **UCD** Use Case Diagram
 - **OUCD** Overall Use Case Diagram
 - **SAD** Software Architecture Document
+- **RFC** Request for Comments
 
 
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
+| [Unveiled Website][website] | 09.06.2016 |
+| [Unveiled Blog][blog] | 09.06.2016 |
 | [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
 | [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
 | [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
@@ -39,9 +42,14 @@ In this section definitions and explanations of acronyms and abbreviations are l
 | [UC10: View own media][uc view own media] | 03.06.2016 |
 | [UC11: Approve registration][uc approve registration] | 03.06.2016 |
 | [UC12: Upload file][uc upload file] | 03.06.2016 |
-| [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
 | [Software Architecture Document][sad] | 15.11.2015	|
+| [Testplan][testplan] | 09.06.2016 |
+| [Android App Installation Guide][installation guide]| 09.06.2016 |
+| [Jira Board][jira] | 09.06.2016 |
+| [Sourcecode (Github)][github] | 09.06.2016 |
 | [Deployment Diagram][deployment diagram] | 28.11.2015 |
+| [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
+| [Project Presentation][presentation] | 09.06.2016 |
 
 ### 1.5 Overview
 The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and
@@ -118,7 +126,7 @@ Inappropriate uploads can be deleted by the administrator.
 
 ### 3.3 Usability
 #### 3.3.1 Smartphone user
-The user should know how to use Android as an mobile operating system and how to install and use an mobile application on it. We will provide a configuration guide.
+The user should know how to use Android as an mobile operating system and how to install and use an mobile application on it. We will provide a installation guide.
 
 #### 3.3.2 Using a browser
 The user of our website has to know how to open and work with a modern browser like Chrome, Firefox or Opera.
@@ -135,7 +143,7 @@ We will also provide an installation-kit so that every institution can host thei
 #### 3.4.2 MTTR
 This is also in the hands of the server owners.
 
-#### 3.4.3 Compliant to RFC
+#### 3.4.3 Compliant to RFCs
 Our streaming server and our AndroidApp should be compliant to [RFC 2326][](RTSP) and [RFC 3550][](RTP) to be easily scalable and to ensure a stable and performant stream (also to other clients and servers if required).
 
 ### 3.5 Performance
@@ -151,11 +159,13 @@ We will use the following languages, which will also be well supported in the fu
 - PHP version 5
 
 #### 3.6.2 Support for dependencies
-We will build our own RTSP streaming library compliant to [RFC 2326][] and [RFC 3550][] in Java for our backend. Therefore we can ensure that this library is compatible with our streaming application at any time. At client side we will use libstreaming that is under continuing development and hosted by Github. You can find the source code and the description at their [Github-Page][libstreaming].
+We will build our own RTSP streaming library compliant to [RFC 2326][] and [RFC 3550][] in Java for our backend. Therefore we can ensure that this library is compatible with our streaming application at any time. At client side we will use libstreaming that is hosted by Github. You can find the source code and the description at their [Github-Page][libstreaming]. This library may not be supported in the future, but at this time it will be possible to us our own streaming library in the Android app as well.
 
 Our website frontend uses Angular and jQuery for displaying the media browser and managing the HTML DOM-manipulations.
 
 ### 3.7 Design Constraints
+All information about the architectural design of our application stack can be found in our [software architecture document][sad]. In the following subchapters you can read about some generall important decisions.
+
 #### 3.7.1 Backend in Java and PHP
 The backend of this software should be written in PHP and Java. The PHP-stack is responsible for a RESTful API that is used both by our webinterface and by the Android application. The Java-stack implements a powerful streaming server that uses the RTP and RTSP protocol as already mentioned.
 
@@ -170,7 +180,20 @@ The whole application will be built with an intuitive design, so there shouldnâ€
 
 ### 3.10 Interfaces
 #### 3.10.1 User Interfaces
-Please consult the different use case descriptions for screenshots and UI functionality.
+Please consult the different use case descriptions for UI mockups (screenshots) and UI functionality descriptions:
+
+- [UC1: Capture and stream video][uc capture video]
+- [UC3: Maintain user profile][uc maintain profile]
+- [UC2: Configure settigns][uc configure settings]
+- [UC4: Switch user][uc switch user]
+- [UC5: Register][uc register]
+- [UC6: Browse own media][uc browse media]
+- [UC7: Manage Users][uc manage users]
+- [UC8: Delete own media][uc delete own media]
+- [UC9: Download own media][uc download own media]
+- [UC10: View own media][uc view own media]
+- [UC11: Approve registration][uc approve registration]
+- [UC12: Upload file][uc upload file]
 
 #### 3.10.2 Hardware Interfaces
 (n/a)
@@ -182,7 +205,7 @@ Please consult the different use case descriptions for screenshots and UI functi
 (n/a)
 
 ### 3.11 Licensing Requirement
-Our server side code is subject to the [Apache Licence 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+Our server side code is subject to the [Apache Licence 2.0](http://www.apache.org/licenses/LICENSE-2.0) as the libraries used in this application part.
 
 ### 3.12 Legal, Copyright and other Notices
 (n/a)
@@ -191,16 +214,18 @@ Our server side code is subject to the [Apache Licence 2.0](http://www.apache.or
 RFCs:
 
 - [RFC 3550][] - RTP: A Transport Protocol for Real-Time Applications
+- [RFC 1889][] - RTP: A Transport Protocol for Real-Time Applications
 - [RFC 2326][] - Real Time Streaming Protocol (RTSP)
 
 ## 4. Supporting Information
 ### 4.1 Appendices
-You can find any internal linked sources in the chapter References (go to the top of this document).
+You can find any internal linked sources in the chapter References (go to the top of this document). If you would like to know what the current status of this project is please visit the [Unveiled Blog][blog].
 
 
 <!-- Link definitions: -->
-[Overall Use Case Diagram (OUCD)]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
 [Edward Snowden]: http://www.brainyquote.com/quotes/quotes/e/edwardsnow551870.html
+[Overall Use Case Diagram (OUCD)]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
+
 [uc capture video]: http://unveiled.systemgrid.de/wp/docu/srs_uc1/ "Use Case 1: Capture and stream video"
 [uc configure settings]: http://unveiled.systemgrid.de/wp/docu/srs_uc2/ "Use Case 2: Configure settings"
 [uc maintain profile]: http://unveiled.systemgrid.de/wp/docu/srs_uc3/ "Use Case 3: Maintain profile"
@@ -213,14 +238,23 @@ You can find any internal linked sources in the chapter References (go to the to
 [uc view own media]: http://unveiled.systemgrid.de/wp/docu/srs_uc10/ "Use Case 10: View own media"
 [uc approve registration]: http://unveiled.systemgrid.de/wp/docu/srs_uc11/ "Use Case 11: Approve registration"
 [uc upload file]: http://unveiled.systemgrid.de/wp/docu/srs_uc12/ "Use Case 12: Upload file"
-[class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
+
 [sad]: http://unveiled.systemgrid.de/wp/docu/sad/ "Software Architecture Document"
-[deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
+[testplan]: http://unveiled.systemgrid.de/wp/docu/testplan/ "Testplan"
+[blog]: http://unveiled.systemgrid.de/wp/blog/ "Unveiled Blog"
+[website]: http://unveiled.systemgrid.de/ "Unveiled Website"
+[jira]: http://jira.it.dh-karlsruhe.de:8080/secure/RapidBoard.jspa?rapidView=10&projectKey=UNV "Jira Unveiled Scrum Board"
+[github]: https://github.com/SAS-Systems "Sourcecode hosted at Github"
+[presentation]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Unveiled_Presentation_Final.pptx "Final project presentation"
+[installation guide]: http://unveiled.systemgrid.de/wp/docu/installation/ "Android App Installation Guide"
 
 [RFC 3550]: https://tools.ietf.org/html/rfc3550
 [RFC 2326]: https://tools.ietf.org/html/rfc2326
+[RFC 1889]: https://www.ietf.org/rfc/rfc1889.txt
 
 [libstreaming]: https://github.com/fyhertz/libstreaming
 
 <!-- Picture-Link definitions: -->
 [OUCD]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png "Overall Use Case Diagram"
+[class diagram php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "Class Diagram for our Backend PHP-Stack"
+[deployment diagram]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png "Deployment diagram, shows all modules and the relations between them"
