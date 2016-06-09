@@ -14,7 +14,7 @@ We used this graph to estimate our remaining Use Cases. You can see these estima
 The first one at x=33 is the Use Case Browse Media, where we have spent too much time in spite of the low number of FPs. The reason for that was a change in our architecture and the technology we used for creating a web-based media browser. This lead thereto that we had to implement most of the functionality again.
 
 ### 2.2 Outlier: RTSP Library
-The second outlier is the Use Case RTSP Library, which isn't a real Use Case because the functionality is only for internal use and the user has no contact to this application part.
+The second outlier is the Use Case RTSP Library, which isn't a real Use Case because the functionality is only for internal use and the user has no contact to this application part. Therefore it was very difficult to generate Function Points, but we wanted to have it in our Use Case list, because it is a fundamental part of our application and took a lot of time to implement, which can be seen in the chart.
 
 ## 3. Additional information
 You can find all our Use Case Specifications and Documents here: [Documentation][documents].
