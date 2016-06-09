@@ -49,7 +49,10 @@ This use case was estimated with 13 FPs. See the table and screenshot below for 
 
 ![][fp calculation]
 
+All function point calculation tables are also located in one spreadsheet. Please take a look at this [document][fpc spreadsheet].
+
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Delete_own_media.png "Use Case Diagram: Delete media"
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_website/delete_media.PNG "Delte Media Screenshot"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_delete_own_media.PNG "FP calculation"
+[fpc spreadsheet]: https://docs.google.com/spreadsheets/d/1qaz88UHaRb7cXoiOkJ0dJ-R7JvfTxPslJvZ183o6wnU/edit?usp=sharing "Function point calculation spreadsheet"
