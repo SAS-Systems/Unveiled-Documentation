@@ -56,6 +56,13 @@ This use case was estimated with 17 FPs. See the table and screenshot below for 
 
 All function point calculation tables are also located in one spreadsheet. Please take a look at this [document][fpc spreadsheet].
 
+## 8. UI testing using _.feature_ files and Cucumber
+This use case is a good example for our UI testing approach. You can see a screenshot from a passed Cucumber UI test below. More information about the testing approach can be found in our [Test-Document][testplan].
+
+![](https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/2012-12-02_AndroidApp_Cucumber_log.png)
+
+
+
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Configure_settings.png "Use Case Diagram: Configure settings"
 
@@ -67,3 +74,5 @@ All function point calculation tables are also located in one spreadsheet. Pleas
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/settings.png "feature description in gherkin and basic flow"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_configure_settings.PNG "FP calculation"
 [fpc spreadsheet]: https://docs.google.com/spreadsheets/d/1qaz88UHaRb7cXoiOkJ0dJ-R7JvfTxPslJvZ183o6wnU/edit?usp=sharing "Function point calculation spreadsheet"
+
+[testplan]: http://unveiled.systemgrid.de/wp/docu/testplan/ "Testplan"
