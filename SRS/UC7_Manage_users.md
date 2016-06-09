@@ -7,9 +7,6 @@ Manage users on website.
 On the website the administrator of the Unveiled server is able to manage all registered users. This includes chanching
 permissions of specific users or deactivate them from the server.
 
-This use case was estimated with 48 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -36,6 +33,18 @@ No use cases require this use case to be completed.
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 9 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Userlist           | 2 | - | 0 | Low |
+| EO Userlist           | 3 | - | 1 | Low |
+| ILF User              | 12 | 0 | - | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Manage_users.png "Use Case Diagram: Manage users"

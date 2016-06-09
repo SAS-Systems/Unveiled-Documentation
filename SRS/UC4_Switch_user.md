@@ -6,9 +6,6 @@ Switch user in Android App.
 ### 1.1 Brief Description
 In the settings screen the user is able to type in login information for the specified server. This login information can be changed every time.
 
-This use case was estimated with 51 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot1]
 ![][screenshot2]
@@ -45,6 +42,17 @@ The following use cases require this use case to be completed:
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 11 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Account            | 2 | - | 1 | Low |
+| ILF settings          | 12 | 0 | - | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Switch_user.png "Use Case Diagram: Switch user"

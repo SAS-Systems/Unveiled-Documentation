@@ -9,9 +9,6 @@ The user is able to view and change his profile information on our website. The 
 - User name
 - EMail address
 
-This use case was estimated with 65 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 
 ![][screenshot]
@@ -40,6 +37,21 @@ No use cases require this use case to be completed.
 
 ## 6. Extension Points
 N/A
+
+## 7. Function Point calculation
+This use case was estimated with 25 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Password           | 3 | - | 1 | Low |
+| EI Email              | 1 | - | 1 | Low |
+| EI Username           | 1 | - | 1 | Low |
+| EO Username           | 1 | - | 0 | Low |
+| EO Email              | 1 | - | 0 | Low |
+| ILF settings          | 12 | 0 | - | - |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Maintain_profile.png "Use Case Diagram: Configure settings"

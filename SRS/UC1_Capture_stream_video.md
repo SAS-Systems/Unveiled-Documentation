@@ -6,9 +6,6 @@ Capture and stream video.
 ### 1.1 Brief Description
 The user is able to capture videos through the inbuilt camera of his Android smartphone. He can see the preview, start and stop the stream.
 
-This use case was estimated with 130 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 
 ![][screenshot]
@@ -35,7 +32,7 @@ The Android-App and the Java-Backend should transfer their data with the Real Ti
 All settings regarding the server connection have to be correct and an internet connection should excist.
 
 ### 4.2 Approved user
-Before the user is able to capture video material, he should have an valid account on the server specified in the settings. 
+Before the user is able to capture video material, he should have an valid account on the server specified in the settings.
 
 ### 4.3 User on the main page
 The user should have already opened the Unveiled Android Application on his smartphone, logged in and navigated to the main page.
@@ -47,6 +44,20 @@ The user should have already opened the Unveiled Android Application on his smar
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 24 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI                    | 1 | - | 0 | Low |
+| EO                    | 0 | - | 3 | Low |
+| ILF User              | 12 | 0 | - | Low |
+| ILF Media             | 17 | 0 | - | Low |
+| ILF Video             | 1 | 6 | - | Average |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Capture_stream_video.png "Use Case Diagram: Take Video"

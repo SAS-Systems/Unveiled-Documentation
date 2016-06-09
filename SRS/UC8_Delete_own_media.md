@@ -6,9 +6,6 @@ Delete own media.
 ### 1.1 Brief Description
 The logged-in user is able to search his uploaded media files in the web interface to select one files to delete them.
 
-This use case was estimated with 45 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -38,6 +35,19 @@ No use cases require this use case to be completed.
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 13 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Popup              | 3 | - | 2 | Low |
+| EO Benachrictigung    | 3 | - | 0 | Low |
+| ILF Media             | 17 | 1 | - | Low |
+| ILF File              | 0 | 1 | - | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Delete_own_media.png "Use Case Diagram: Delete media"

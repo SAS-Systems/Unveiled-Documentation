@@ -6,9 +6,6 @@ Browse own media.
 ### 1.1 Brief Description
 With our web interface a logged-in user is able to browse through his/her uploaded content. He can see a preview of pictures and videos.
 
-This use case was estimated with 62 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -37,6 +34,18 @@ The following use cases require this use case to be completed:
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 19 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EO Media Viewer       | 5 | - | 2 | Average |
+| ILF Media             | 17 | 1 | - | Low |
+| ILF User              | 12 | 0 | - | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Browse_media.png "Use Case Diagram: Register"

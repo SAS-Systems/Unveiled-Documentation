@@ -6,9 +6,6 @@ Configure settings in Android App.
 ### 1.1 Brief Description
 The user is able to configure the information how to access the streaming server. Additionally the user has the ability to change general picture and video quality settings.
 
-This use case was estimated with 70 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot1]
 ![][screenshot2]
@@ -43,6 +40,19 @@ The following use cases require this use case to be completed:
 
 ## 6. Extension Points
 N/A
+
+## 7. Function Point calculation
+This use case was estimated with 17 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Server-Verbindung  | 4 | - | 1 | Low |
+| EI Video/Aufnahme     | 3 | - | 1 | Low |
+| EI Bild/Upload        | 1 | - | 1 | Low |
+| ILF settings          | 12 | - | 1 | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Configure_settings.png "Use Case Diagram: Configure settings"

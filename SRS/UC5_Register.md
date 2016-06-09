@@ -8,9 +8,6 @@ The user has to send an registration request to the server administrator to be a
 
 The email addresse must be verified by the user. Therefore he gets an email sent, which contains a verification link.
 
-This use case was estimated with 51 FPs. See the below screenshot for details:
-![][fp calculation]
-
 ### 1.2 Screenshot Mockup
 ![][screenshot]
 
@@ -40,6 +37,18 @@ The following use cases require this use case to be completed:
 
 ## 6. Extension Points
 (n/a)
+
+## 7. Function Point calculation
+This use case was estimated with 15 FPs. See the table and screenshot below for details:
+
+| Transaction | DET's | RET's | FTR's | Complexity |
+|-----------------------|:-:|:-:|:-:|:---:|
+| EI Register           | 4 | - | 1 | Low |
+| EO Bestätigung        | 1 | - | 0 | Low |
+| ILF user              | 12 | 0 | - | Low |
+| EIF                   | - | - | - | - |
+
+![][fp calculation]
 
 <!-- Link definitions: -->
 [basic flow]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UC_Diagrams/UC_Diagram_Register.png "Use Case Diagram: Register"
