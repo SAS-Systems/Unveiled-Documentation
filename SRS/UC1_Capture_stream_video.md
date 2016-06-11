@@ -17,6 +17,8 @@ The user is able to capture videos through the inbuilt camera of his Android sma
 <!-- ![][basic flow] -->
 ![][gherkin]
 
+The `.feature`-file can be found [here][gherkin file].
+
 ### 2.2 Alternative Flow
 (n/a)
 
@@ -66,6 +68,7 @@ All function point calculation tables are also located in one spreadsheet. Pleas
 
 [screenshot]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Mockup_AndroidApp/Camera.PNG "Camera Mockup"
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/capture_video.png "Feature description in Gherkin"
+[gherkin file]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Metadata/Gehrking_Cucumber/capture_video.feature ".feature file"
 
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_capture_and_stream_video.PNG "FP calculation"
 [fpc spreadsheet]: https://docs.google.com/spreadsheets/d/1qaz88UHaRb7cXoiOkJ0dJ-R7JvfTxPslJvZ183o6wnU/edit?usp=sharing "Function point calculation spreadsheet"

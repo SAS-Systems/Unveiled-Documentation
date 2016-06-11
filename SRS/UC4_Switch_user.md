@@ -16,7 +16,8 @@ In the settings screen the user is able to type in login information for the spe
 ### 2.1 Basic Flow
 <!-- ![][basic flow] -->
 ![][gherkin]
-(tbd)
+
+The `.feature`-file can be found [here][gherkin file].
 
 ### 2.2 Alternative Flow
 (n/a)
@@ -62,5 +63,6 @@ All function point calculation tables are also located in one spreadsheet. Pleas
 [screenshot1]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_screen_overview.PNG "Settingsscreen overview"
 [screenshot2]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_server_connection.PNG "server connection settings"
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/switch_user.png "feature description in gherkin"
+[gherkin file]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Metadata/Gehrking_Cucumber/switch_user.feature ".feature file"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_switch_user.PNG "FP calculation"
 [fpc spreadsheet]: https://docs.google.com/spreadsheets/d/1qaz88UHaRb7cXoiOkJ0dJ-R7JvfTxPslJvZ183o6wnU/edit?usp=sharing "Function point calculation spreadsheet"

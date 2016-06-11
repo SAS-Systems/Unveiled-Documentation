@@ -18,6 +18,8 @@ The user is able to configure the information how to access the streaming server
 <!-- ![][basic flow] -->
 ![][gherkin]
 
+The `.feature`-file can be found [here][gherkin file].
+
 ### 2.2 Alternative Flow
 (n/a)
 
@@ -72,6 +74,7 @@ This use case is a good example for our UI testing approach. You can see a scree
 [screenshot4]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Screenshots_AndroidApp/settings_picture_upload.PNG "picture upload settings"
 
 [gherkin]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Test/UI-Test/Gherkin_Features/settings.png "feature description in gherkin and basic flow"
+[gherkin file]: https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Metadata/Gehrking_Cucumber/settings.feature ".feature file"
 [fp calculation]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/FP%20calculation/FP_configure_settings.PNG "FP calculation"
 [fpc spreadsheet]: https://docs.google.com/spreadsheets/d/1qaz88UHaRb7cXoiOkJ0dJ-R7JvfTxPslJvZ183o6wnU/edit?usp=sharing "Function point calculation spreadsheet"
 
