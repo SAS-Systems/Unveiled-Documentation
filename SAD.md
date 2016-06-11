@@ -61,13 +61,28 @@ In the following picture our class diagrams are shown. The classes are marked in
 
 In our UML diagram every activity class is assigned to a XML view. The settings activity is assigned to a default view. Furthermore the settings activity is connected with several fragments which are set for the different settings. Also every class is connected to the server connection class except the main activity to get their data from the server.
 
+### 5.2 Data Access Object (DAO) Pattern
+We have used the DAO Pattern to encapsulate our low-level database communication from our server logic. The DAO Pattern is made up of
+
+ - _Model Objects_ which represent one database entry,
+ - A _Data Access Object Interface (DAO Interface)_ which defines standard actions to be performed on the _Model Objects_ and
+ - the _Data Access Object_ itself which implements the _DAO Interface_ and is responsible for the communication with the data storage.
+
+The following screenshot shows our **old** implementation of our Backend logic:
+
+![model php][]
+
+After refactoring our code and implementing the _DAO Pattern_ the class diagram looked like this (the **new** implementation):
+
+![model php new][]
+
 ### 5.2 Architecturally Significant Design Packages
 
 #### 5.2.1 Model
 The DB schema is described in chapter 9.
-The model classes of our PHP-Backendstack is shown below:
+The model classes of our PHP-Backend-Stack is shown below:
 
-![model PHP][]
+![model php new][]
 
 #### 5.2.2 View
 The view components of our Android App consist of multiple XML-Files. They can't be shown in a class diagram.
@@ -98,7 +113,6 @@ Our MVC architecture is spread over several different devices. Our server includ
 ## 11. Quality
 (n/a)
 
-
 <!-- Link definitions: -->
 [SRS]: http://unveiled.systemgrid.de/wp/docu/docusrs/ "SRS"
 [Overall Use Case Diagram (OUCD)]: https://github.com/CodeLionX/Unveiled/blob/master/Bilder/Unveiled_Overall%20Use%20Case%20Diagram.png "Link to Github"
@@ -124,4 +138,5 @@ Our MVC architecture is spread over several different devices. Our server includ
 [mvc overview]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Overview.png "MVC architecture overview"
 [data model]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/Unveiled_DBSchema.png "DB model"
 [model php]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png "UML class diagram of the model"
+[model php new]: https://raw.githubusercontent.com/SAS-Systems/Unveiled/master/diagramAfterWithMarks.png "UML class diagram of the new model"
 [controller android]: https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_MVC_Controller.png "UML class diagram of the Android App controller"
