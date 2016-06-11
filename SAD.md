@@ -17,22 +17,32 @@ In this section definitions and explanations of acronyms and abbreviations are l
 ### 1.4 References
 |			Title									|	Date		|
 |---------------------------------------------------|---------------|
+| [Unveiled Website](http://unveiled.systemgrid.de/) | 09.06.2016 |
+| [Unveiled Blog](http://unveiled.systemgrid.de/wp/blog/) | 09.06.2016 |
+| [Overall Use Case Diagram (OUCD)](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Bilder/UC_Diagrams/Unveiled_Overall%20Use%20Case%20Diagram.png)| 16.10.2015	|
+| [UC1: Capture and stream video](http://unveiled.systemgrid.de/wp/docu/srs_uc1/) | 23.10.2015	|
+| [UC2: Configure settigns](http://unveiled.systemgrid.de/wp/docu/srs_uc2/) | 23.10.2015	|
+| [UC3: Maintain user profile](http://unveiled.systemgrid.de/wp/docu/srs_uc3/) | 22.11.2015 |
+| [UC4: Switch user](http://unveiled.systemgrid.de/wp/docu/srs_uc4/) | 21.11.2015 |
+| [UC5: Register](http://unveiled.systemgrid.de/wp/docu/srs_uc5/) | 28.11.2015 |
+| [UC6: Browse own media](http://unveiled.systemgrid.de/wp/docu/srs_uc6/) | 28.11.2015 |
+| [UC7: Manage Users](http://unveiled.systemgrid.de/wp/docu/srs_uc7/) | 19.12.2015 |
+| [UC8: Delete own media](http://unveiled.systemgrid.de/wp/docu/srs_uc8/) | 03.06.2016 |
+| [UC9: Download own media](http://unveiled.systemgrid.de/wp/docu/srs_uc9/) | 03.06.2016 |
+| [UC10: View own media](http://unveiled.systemgrid.de/wp/docu/srs_uc10/) | 03.06.2016 |
+| [UC11: Approve registration](http://unveiled.systemgrid.de/wp/docu/srs_uc11/) | 03.06.2016 |
+| [UC12: Upload file](http://unveiled.systemgrid.de/wp/docu/srs_uc12/) | 03.06.2016 |
 | [Software Requirement Specification (SRS)][SRS] | 14.11.2015	|
-| [Overall Use Case Diagram (OUCD)]| 16.10.2015	|
-| [UC1: Capture and stream video][uc capture video] | 23.10.2015	|
-| [UC2: Configure settigns][uc configure settings] | 23.10.2015	|
-| [UC3: Maintain user profile][uc maintain profile] | 22.11.2015 |
-| [UC4: Switch user][uc switch user] | 21.11.2015 |
-| [UC5: Register][uc register] | 28.11.2015 |
-| [UC6: Browse own media][uc browse media] | 28.11.2015 |
-| [UC7: Manage Users][uc manage users] | 19.12.2015 |
-| [UC8: Delete own media][uc delete own media] | 03.06.2016 |
-| [UC9: Download own media][uc download own media] | 03.06.2016 |
-| [UC10: View own media][uc view own media] | 03.06.2016 |
-| [UC11: Approve registration][uc approve registration] | 03.06.2016 |
-| [UC12: Upload file][uc upload file] | 03.06.2016 |
-| [Class Diagram Backend PHP Stack][class diagram php] | 14.11.2015	|
-| [Deployment Diagram][deployment diagram] | 28.11.2015 |
+| [Testplan](http://unveiled.systemgrid.de/wp/docu/testplan/) | 09.06.2016 |
+| [Android App Installation Guide](http://unveiled.systemgrid.de/wp/docu/installation/) | 09.06.2016 |
+| [Jira Board](http://jira.it.dh-karlsruhe.de:8080/secure/RapidBoard.jspa?rapidView=10&projectKey=UNV) | 09.06.2016 |
+| [Sourcecode (Github)](https://github.com/SAS-Systems)| 09.06.2016 |
+| [Function point calculation and use case estimation](http://unveiled.systemgrid.de/wp/docu/fpc/) | 09.06.2016 |
+| [Deployment Diagram](https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML_deployment.png) | 28.11.2015 |
+| [Class Diagram Backend PHP Stack](https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/UML%20Class%20diagrams/UML-PHP-Stack_new.png) | 14.11.2015	|
+| [Continuous Integration Process](https://raw.githubusercontent.com/SAS-Systems/Unveiled-Documentation/master/Bilder/auto_deployment_lifecycle.png) | 11.06.2016 |
+| [Project Presentation](https://github.com/SAS-Systems/Unveiled-Documentation/blob/master/Unveiled_Presentation_Final.pptx) | 09.06.2016 |
+
 
 ### 1.5 Overview
 This document is about our overall architectural design ideas. The following chapters explaining them from different views.
